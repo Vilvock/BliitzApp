@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/rootView"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".main_ui.common.activity.MainActivity">
+    tools:context=".MainActivity">
 
     <!--    app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
 
@@ -85,18 +85,18 @@
                 />
 
 
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/nav_view_bottomnav"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="@color/colorPrimaryDark"
-                app:itemIconTint="@drawable/selector_bottom_nav"
-                app:labelVisibilityMode="unlabeled"
-                app:menu="@menu/bottom_nav_menu"
-                app:elevation="0dp"
-                android:elevation="0dp"
-                />
+<!--            <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--                android:id="@+id/nav_view_bottomnav"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="bottom"-->
+<!--                android:background="@color/colorPrimaryDark"-->
+<!--                app:itemIconTint="@drawable/selector_bottom_nav"-->
+<!--                app:labelVisibilityMode="unlabeled"-->
+<!--                app:menu="@menu/bottom_nav_menu"-->
+<!--                app:elevation="0dp"-->
+<!--                android:elevation="0dp"-->
+<!--                />-->
 
 
     </LinearLayout>
