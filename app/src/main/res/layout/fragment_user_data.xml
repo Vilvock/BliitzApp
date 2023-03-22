@@ -27,7 +27,6 @@
                 android:layout_height="140dp"                        android:layout_gravity="center"
                 android:scaleType="centerCrop"
                 android:background="@android:color/transparent"
-                android:src="@drawable/person"
                 app:shapeAppearanceOverlay="@style/roundedImageView"/>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -147,7 +146,7 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.aguadaserra.app.global_ui.components.ProgressButton
+            <com.bliitz.app.global_ui.components.ProgressButton
                 android:id="@+id/update_bt"
                 style="@style/StyleProgressButton"
                 android:layout_width="match_parent"
@@ -207,7 +206,7 @@
 
         </LinearLayout>
 
-        <com.aguadaserra.app.global_ui.components.ProgressButton
+        <com.bliitz.app.global_ui.components.ProgressButton
             android:id="@+id/updatePass_bt"
             style="@style/StyleProgressButton"
             android:layout_width="match_parent"

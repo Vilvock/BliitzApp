@@ -39,7 +39,6 @@
                         android:layout_gravity="center"
                         android:scaleType="centerCrop"
                         android:background="@android:color/transparent"
-                        android:src="@drawable/person"
                         app:shapeAppearanceOverlay="@style/roundedImageView" />
 
                     <LinearLayout
@@ -106,8 +105,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
-                        android:background="@android:color/transparent"
-                        android:src="@drawable/ic_address" />
+                        android:background="@android:color/transparent" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -154,8 +152,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
-                        android:background="@android:color/transparent"
-                        android:src="@drawable/ic_category" />
+                        android:background="@android:color/transparent" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -202,8 +199,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
-                        android:background="@android:color/transparent"
-                        android:src="@drawable/ic_support" />
+                        android:background="@android:color/transparent" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -250,8 +246,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
-                        android:background="@android:color/transparent"
-                        android:src="@drawable/ic_logout" />
+                        android:background="@android:color/transparent" />
 
                     <LinearLayout
                         android:layout_width="match_parent"

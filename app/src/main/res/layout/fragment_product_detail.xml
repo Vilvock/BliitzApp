@@ -197,7 +197,6 @@
                 android:layout_height="wrap_content"
                 android:padding="12dp"
                 android:textAllCaps="true"
-                android:drawableStart="@drawable/ic_heart_empty"
                 android:layout_weight="1"
                 android:text="Favoritar"
                 android:textAlignment="center"/>
@@ -211,7 +210,6 @@
                 android:padding="12dp"
                 android:textAllCaps="true"
                 android:textColor="@color/colorPrimaryDark"
-                android:drawableStart="@drawable/ic_cart"
                 android:drawableTint="@color/colorPrimaryDark"
                 android:layout_weight="1"
                 android:text="Adicionar ao carrinho"
