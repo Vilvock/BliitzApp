@@ -175,7 +175,7 @@
                 android:gravity="center_horizontal"
                 android:text="Ao clicar no botão Criar conta, você aceita os termos de privacidade do aplicativo." />
 
-            <com.aguadaserra.app.global_ui.components.ProgressButton
+            <com.bliitz.app.global_ui.components.ProgressButton
                 android:id="@+id/register_bt"
                 style="@style/StyleProgressButton"
                 android:layout_width="match_parent"
@@ -230,12 +230,12 @@
                 android:gravity="center_vertical"
                 android:padding="12dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:src="@drawable/ic_apple_seeklogo"
-                    app:tint="@color/black" />
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="0"-->
+<!--                    android:src="@drawable/ic_apple_seeklogo"-->
+<!--                    app:tint="@color/black" />-->
 
             </LinearLayout>
 
@@ -250,11 +250,11 @@
                 android:gravity="center_vertical"
                 android:padding="12dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:src="@drawable/ic_facebook_seeklogo" />
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="0"-->
+<!--                    android:src="@drawable/ic_facebook_seeklogo" />-->
 
             </LinearLayout>
 

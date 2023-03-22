@@ -141,12 +141,12 @@
                 android:gravity="center_vertical"
                 android:padding="12dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:src="@drawable/ic_apple_seeklogo"
-                    app:tint="@color/black" />
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="0"-->
+<!--                    android:src="@drawable/ic_apple_seeklogo"-->
+<!--                    app:tint="@color/black" />-->
 
             </LinearLayout>
 
@@ -161,11 +161,11 @@
                 android:gravity="center_vertical"
                 android:padding="12dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:src="@drawable/ic_facebook_seeklogo" />
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="0"-->
+<!--                    android:src="@drawable/ic_facebook_seeklogo" />-->
 
             </LinearLayout>
 
