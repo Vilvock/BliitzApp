@@ -51,7 +51,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.home.HomeFragment"
+        android:name="com.bliitz.app.main_ui.fragment.menu.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -184,7 +184,7 @@
     </fragment>
     <fragment
         android:id="@+id/favoritesFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.favorites.FavoritesFragment"
+        android:name="com.bliitz.app.main_ui.fragment.menu.favorites.FavoritesFragment"
         android:label="fragment_favorites"
         tools:layout="@layout/fragment_favorites" >
         <action
@@ -197,7 +197,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainMenuFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.profile.MainMenuFragment"
+        android:name="com.bliitz.app.main_ui.fragment.menu.profile.MainMenuFragment"
         android:label="fragment_main_menu"
         tools:layout="@layout/fragment_main_menu" >
         <action
@@ -234,7 +234,7 @@
         tools:layout="@layout/fragment_user_address" />
     <fragment
         android:id="@+id/categoriesFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.profile.CategoriesFragment"
+        android:name="com.bliitz.app.main_ui.fragment.menu.profile.CategoriesFragment"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_categories" >
         <action
@@ -274,12 +274,12 @@
     </fragment>
     <fragment
         android:id="@+id/productDetailFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.home.ProductDetailFragment"
+        android:name="com.bliitz.app.main_ui.fragment.menu.home.ProductDetailFragment"
         android:label="fragment_product_detail"
         tools:layout="@layout/fragment_product_detail" />
     <fragment
         android:id="@+id/userDataFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.profile.UserDataFragment"
+        android:name="com.bliitz.app.main_ui.fragment.menu.profile.UserDataFragment"
         android:label="UserDataFragment"
         tools:layout="@layout/fragment_user_data"  />
     <fragment
@@ -338,7 +338,7 @@
         tools:layout="@layout/fragment_success" />
     <fragment
         android:id="@+id/filterFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.home.FilterFragment"
+        android:name="com.bliitz.app.main_ui.fragment.menu.advanced_filter.FilterFragment"
         android:label="fragment_filter"
         tools:layout="@layout/fragment_filter" >
         <action
@@ -351,7 +351,7 @@
     </fragment>
     <fragment
         android:id="@+id/filterResultsFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.home.FilterResultsFragment"
+        android:name="com.bliitz.app.main_ui.fragment.menu.advanced_filter.FilterResultsFragment"
         android:label="fragment_filter_results"
         tools:layout="@layout/fragment_filter_results" >
         <action
