@@ -5,8 +5,15 @@
       <map>
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/drawable/bg_top_round.xml" value="0.3545" />
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/activity_webview.xml" value="0.3625" />
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/empty_list.xml" value="0.3625" />
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/fragment_generic_dialog.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/fragment_getting_location_permission.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/fragment_recover_password.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/fragment_splash.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/fragment_update_password_by_token.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/fragment_verify_token.xml" value="0.3625" />
       </map>
     </option>
   </component>
