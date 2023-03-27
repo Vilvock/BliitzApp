@@ -14,12 +14,10 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:gravity="start"
+            android:gravity="center_horizontal"
             android:orientation="horizontal"
             android:padding="@dimen/padding_application">
 
@@ -28,7 +26,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="start"
                 android:gravity="start"
-                android:text="Olá, \nCrie uma conta"
+                android:text="Crie uma conta"
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_size7"
                 android:textStyle="bold" />
@@ -37,134 +35,84 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:padding="@dimen/padding_application"
-            >
+            android:padding="@dimen/padding_application">
 
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="E-mail"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/mainEditText"
+                android:id="@+id/email_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication">
+                android:drawableStart="@drawable/ic_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Razão Social"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication">
-
-                <EditText
-                    android:id="@+id/name_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Nome Fantasia"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication">
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="Celular"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-                <com.santalu.maskedittext.MaskEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="CNPJ"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            <com.santalu.maskedittext.MaskEditText
+                style="@style/mainEditText"
+                android:id="@+id/cellphone_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication">
+                android:drawableStart="@drawable/ic_cellphone"
+                android:inputType="number"
+                android:maxLines="1" />
 
-                <com.santalu.maskedittext.MaskEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Celular"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication">
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="Senha"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/email_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="E-mail"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            <EditText
+                style="@style/mainEditText"
+                android:id="@+id/password_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication"
-                app:passwordToggleEnabled="true">
+                android:drawableStart="@drawable/ic_lock"
+                android:inputType="textPassword"
+                android:maxLines="1" />
 
-                <EditText
-                    android:id="@+id/password_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Senha"
-                    android:inputType="textPassword"
-                    android:maxLines="1" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication"
-                app:passwordToggleEnabled="true">
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="Confirmar Senha"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/coPassword_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Confirmar Senha"
-                    android:inputType="textPassword"
-                    android:maxLines="1" />
-
-            </com.google.android.material.textfield.TextInputLayout>
+            <EditText
+                style="@style/mainEditText"
+                android:id="@+id/coPassword_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_lock"
+                android:inputType="textPassword"
+                android:maxLines="1" />
 
             <TextView
                 android:id="@+id/terms_tv"

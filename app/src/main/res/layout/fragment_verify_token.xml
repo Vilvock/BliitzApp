@@ -18,16 +18,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:gravity="start"
+            android:gravity="center_horizontal"
             android:orientation="horizontal"
             android:padding="@dimen/padding_application">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_gravity="start"
-                android:gravity="start"
                 android:text="Verificar Token"
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_size7"
@@ -38,7 +35,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center_horizontal"
             android:orientation="vertical"
             android:padding="@dimen/padding_application">
 
@@ -48,23 +44,25 @@
                 android:text="É necessário inserir o Token enviado por e-mail para prosseguir."
                 android:layout_marginTop="24dp" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication">
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="Token"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/token_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Token"
-                    android:inputType="textPassword"
-                    android:maxLines="1" />
+            <EditText
+                style="@style/mainEditText"
+                android:id="@+id/token_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_key"
+                android:inputType="textPassword"
+                android:maxLines="1" />
 
-            </com.google.android.material.textfield.TextInputLayout>
 
 
             <com.bliitz.app.global_ui.components.ProgressButton

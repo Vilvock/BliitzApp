@@ -37,20 +37,18 @@ class MainActivity : AppCompatActivity(), BaseActivity {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
         setTheme(R.style.Theme_BliitzApp)
-
         darkTintColor = ContextCompat.getColor(this, R.color.colorPrimaryDark)
-
-
-
         navController = findNavController(R.id.nav_host_fragment)
 
 
-        LocalBroadcastManager.getInstance(this).registerReceiver(myReceiver,
-            IntentFilter("Notification")
-        )
+        back_fab.setOnClickListener {
+            onBackPressed()
+        }
+
+//        LocalBroadcastManager.getInstance(this).registerReceiver(myReceiver,
+//            IntentFilter("Notification")
+//        )
 
         if (intent.extras != null) {
 
@@ -147,9 +145,12 @@ class MainActivity : AppCompatActivity(), BaseActivity {
 
     override fun updateToolbar(hasBackButton: Boolean) {
 
-        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back)
-        supportActionBar?.setDisplayShowHomeEnabled(hasBackButton)
-        supportActionBar?.setDisplayHomeAsUpEnabled(hasBackButton)
+        if (hasBackButton) {
+            back_fab.visibility = View.VISIBLE
+
+        } else {
+            back_fab.visibility = View.GONE
+        }
     }
 
 
