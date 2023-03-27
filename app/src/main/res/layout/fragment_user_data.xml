@@ -24,7 +24,8 @@
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/avatar_iv"
                 android:layout_width="140dp"
-                android:layout_height="140dp"                        android:layout_gravity="center"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
                 android:scaleType="centerCrop"
                 android:background="@android:color/transparent"
                 app:shapeAppearanceOverlay="@style/roundedImageView"/>

@@ -8,9 +8,6 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".main_ui.activity.MainActivity">
 
-    <!--    app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
-
-
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
@@ -71,9 +68,9 @@
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-<!--        <FrameLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent">-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <fragment
                 android:id="@+id/nav_host_fragment"
@@ -85,22 +82,53 @@
                 />
 
 
-<!--            <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--                android:id="@+id/nav_view_bottomnav"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_gravity="bottom"-->
-<!--                android:background="@color/colorPrimaryDark"-->
-<!--                app:itemIconTint="@drawable/selector_bottom_nav"-->
-<!--                app:labelVisibilityMode="unlabeled"-->
-<!--                app:menu="@menu/bottom_nav_menu"-->
-<!--                app:elevation="0dp"-->
-<!--                android:elevation="0dp"-->
-<!--                />-->
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/coordinatorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:minHeight="90dp"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:visibility="visible">
 
+                <com.google.android.material.bottomappbar.BottomAppBar
+                    android:id="@+id/bottomAppBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    app:fabAlignmentMode="center"
+                    app:fabCradleMargin="10dp"
+                    app:fabCradleRoundedCornerRadius="10dp"
+                    app:fabCradleVerticalOffset="0dp"
+                    app:titleMargin="0dp">
 
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:id="@+id/nav_view_bottomnav"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/trasparent"
+                        android:outlineAmbientShadowColor="@android:color/transparent"
+                        android:outlineSpotShadowColor="@android:color/transparent"
+                        app:itemIconTint="@drawable/selector_bottom_nav"
+                        app:labelVisibilityMode="unlabeled"
+                        app:menu="@menu/bottom_nav_menu">
+
+                    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+                </com.google.android.material.bottomappbar.BottomAppBar>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_lock"
+                    app:layout_anchor="@id/bottomAppBar"
+                    app:tint="@color/colorPrimaryDark" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </FrameLayout>
     </LinearLayout>
-
-
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

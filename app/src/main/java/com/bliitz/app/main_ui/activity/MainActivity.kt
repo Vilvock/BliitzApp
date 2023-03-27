@@ -92,14 +92,14 @@ class MainActivity : AppCompatActivity(), BaseActivity {
     }
 
     override fun updatebottomNavigationVisibility(hasBottomNavigation: Boolean) {
-//        if (hasBottomNavigation) {
-//            nav_view_bottomnav.visibility = View.VISIBLE
-//            mainLogo_iv.visibility = View.VISIBLE
-//
-//            nav_view_bottomnav.setOnNavigationItemSelectedListener { item ->
-//
-//                navController.popBackStack()
-//
+        if (hasBottomNavigation) {
+            nav_view_bottomnav.visibility = View.VISIBLE
+            coordinatorLayout.visibility = View.VISIBLE
+
+            nav_view_bottomnav.setOnNavigationItemSelectedListener { item ->
+
+                navController.popBackStack()
+
 //                when (item.itemId) {
 //                    R.id.navigation_home -> {
 //                        navController.navigate(R.id.homeFragment)
@@ -118,13 +118,13 @@ class MainActivity : AppCompatActivity(), BaseActivity {
 //                    }
 //
 //                }
-//                true
-//            }
-//        } else {
-//            nav_view_bottomnav.visibility = View.GONE
-//            mainLogo_iv.visibility = View.GONE
-//
-//        }
+                true
+            }
+        } else {
+            nav_view_bottomnav.visibility = View.GONE
+            coordinatorLayout.visibility = View.GONE
+
+        }
     }
 
     override fun updateToolbarVisibility(hasToolbar: Boolean) {
