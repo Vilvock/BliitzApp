@@ -9,7 +9,13 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bliitz.app.R
+import com.bliitz.app.global_ui.components.CircleRecyclerViewDecoration
 import com.bliitz.app.global_ui.config_fragment.BaseFragment
+import com.bliitz.app.main_ui.adapter.CarrouselItemAdapter
+import com.bliitz.app.main_ui.adapter.ProductAdapter
+import com.bliitz.app.main_ui.adapter.ProductGridAdapter
+import com.bliitz.app.util.RecyclerItemListener
+import kotlinx.android.synthetic.main.fragment_home.*
 
 /**
  * A simple [Fragment] subclass.
@@ -33,46 +39,42 @@ class HomeFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
         setHasOptionsMenu(true)
 
-//        loadCarrousel()
-//
-//        val list = ArrayList<Any>()
-//
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//
-//        val adapter = ProductAdapter(requireActivity(), list, object : RecyclerItemListener {
-//            override fun onClickListenerItem(item: Any?) {
-//                super.onClickListenerItem(item)
-//
-//                navigation.navigate(R.id.action_homeFragment_to_productDetailFragment)
-//            }
-//
-//        })
-//        val layoutManagerRv: RecyclerView.LayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-//
-//        products_rv.layoutManager = layoutManagerRv
-//        products_rv.adapter = adapter
-//
-//        val adapterGrid = ProductGridAdapter(requireActivity(), list, object : RecyclerItemListener {
-//            override fun onClickListenerItem(item: Any?) {
-//                super.onClickListenerItem(item)
-//
-//                navigation.navigate(R.id.action_homeFragment_to_productDetailFragment)
-//            }
-//
-//        })
-//
-//
-//        productsGrid_rv.layoutManager = GridLayoutManager(requireContext(), 2)
-//        productsGrid_rv.adapter = adapterGrid
+        loadCarrousel()
+
+        val list = ArrayList<Any>()
+
+        list.add(Any())
+        list.add(Any())
+        list.add(Any())
+        list.add(Any())
+        list.add(Any())
+
+
+        val adapter = ProductAdapter(requireActivity(), list, object : RecyclerItemListener {
+            override fun onClickListenerItem(item: Any?) {
+                super.onClickListenerItem(item)
+
+                navigation.navigate(R.id.action_homeFragment_to_productDetailFragment)
+            }
+
+        })
+        val layoutManagerRv: RecyclerView.LayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+
+        products_rv.layoutManager = layoutManagerRv
+        products_rv.adapter = adapter
+
+        val adapterGrid = ProductGridAdapter(requireActivity(), list, object : RecyclerItemListener {
+            override fun onClickListenerItem(item: Any?) {
+                super.onClickListenerItem(item)
+
+                navigation.navigate(R.id.action_homeFragment_to_productDetailFragment)
+            }
+
+        })
+
+
+        productsGrid_rv.layoutManager = GridLayoutManager(requireContext(), 2)
+        productsGrid_rv.adapter = adapterGrid
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -91,7 +93,7 @@ class HomeFragment : BaseFragment() {
 
         super.onCreateOptionsMenu(menu, inflater)
     }
-//
+
 //    override fun onOptionsItemSelected(item: MenuItem): Boolean {
 //        return when (item.itemId) {
 //            R.id.search_nav -> {
@@ -102,27 +104,27 @@ class HomeFragment : BaseFragment() {
 //        }
 //    }
 
-//    private fun loadCarrousel() {
-//
-//        val photoList = ArrayList<Int>()
-//
-//        photoList.add(R.drawable.banner1_image)
-//        photoList.add(R.drawable.banner2_image)
-//
-//        val adapter = CarrouselItemAdapter(photoList)
-//
-//
-//        carrousel_rv.layoutManager = (object : LinearLayoutManager(requireContext(), HORIZONTAL, false) {
-//            override fun checkLayoutParams(lp: RecyclerView.LayoutParams): Boolean {
-//                // force height of viewHolder here, this will override layout_height from xml
-//                lp.width = (width / 1.34).toInt()
-//                return true
-//            }
-//        })
-//
-//        carrousel_rv.adapter = adapter
-//
-//
-//        carrousel_rv.addItemDecoration(CircleRecyclerViewDecoration(requireActivity()))
-//    }
+    private fun loadCarrousel() {
+
+        val photoList = ArrayList<Int>()
+
+        photoList.add(R.drawable.main_logo1)
+        photoList.add(R.drawable.main_logo2)
+
+        val adapter = CarrouselItemAdapter(photoList)
+
+
+        carrousel_rv.layoutManager = (object : LinearLayoutManager(requireContext(), HORIZONTAL, false) {
+            override fun checkLayoutParams(lp: RecyclerView.LayoutParams): Boolean {
+                // force height of viewHolder here, this will override layout_height from xml
+                lp.width = (width / 1.34).toInt()
+                return true
+            }
+        })
+
+        carrousel_rv.adapter = adapter
+
+
+        carrousel_rv.addItemDecoration(CircleRecyclerViewDecoration(requireActivity()))
+    }
 }

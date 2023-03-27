@@ -112,20 +112,21 @@
                         android:outlineSpotShadowColor="@android:color/transparent"
                         app:itemIconTint="@drawable/selector_bottom_nav"
                         app:labelVisibilityMode="unlabeled"
-                        app:menu="@menu/bottom_nav_menu">
-
-                    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
+                        app:menu="@menu/bottom_nav_menu"
+                        app:elevation="0dp"/>
                 </com.google.android.material.bottomappbar.BottomAppBar>
 
+
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/fab"
+                    android:id="@+id/main_fab"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/app_name"
-                    android:src="@drawable/ic_lock"
                     app:layout_anchor="@id/bottomAppBar"
-                    app:tint="@color/colorPrimaryDark" />
+                    android:clickable="true"
+                    android:src="@drawable/ic_camera"
+                    android:backgroundTint="@color/colorPrimary"
+                    app:backgroundTint="@android:color/transparent"
+                    app:tint="@color/white" />
 
             </androidx.coordinatorlayout.widget.CoordinatorLayout>
         </FrameLayout>

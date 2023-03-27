@@ -55,19 +55,19 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_productDetailFragment"
-            app:destination="@id/productDetailFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-        <action
             android:id="@+id/action_homeFragment_to_filterFragment"
             app:destination="@id/filterFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"  />
+        <action
+            android:id="@+id/action_homeFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/gettingLocationPermissionFragment"
@@ -160,15 +160,7 @@
         android:id="@+id/favoritesFragment"
         android:name="com.bliitz.app.main_ui.fragment.menu.favorites.FavoritesFragment"
         android:label="fragment_favorites"
-        tools:layout="@layout/fragment_favorites" >
-        <action
-            android:id="@+id/action_favoritesFragment_to_productDetailFragment"
-            app:destination="@id/productDetailFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"/>
-    </fragment>
+        tools:layout="@layout/fragment_favorites" />
     <fragment
         android:id="@+id/mainMenuFragment"
         android:name="com.bliitz.app.main_ui.fragment.menu.profile.MainMenuFragment"
@@ -193,20 +185,7 @@
         android:id="@+id/categoriesFragment"
         android:name="com.bliitz.app.main_ui.fragment.menu.profile.CategoriesFragment"
         android:label="fragment_categories"
-        tools:layout="@layout/fragment_categories" >
-        <action
-            android:id="@+id/action_categoriesFragment_to_productDetailFragment"
-            app:destination="@id/productDetailFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"  />
-    </fragment>
-    <fragment
-        android:id="@+id/productDetailFragment"
-        android:name="com.bliitz.app.main_ui.fragment.menu.home.ProductDetailFragment"
-        android:label="fragment_product_detail"
-        tools:layout="@layout/fragment_product_detail" />
+        tools:layout="@layout/fragment_categories" />
     <fragment
         android:id="@+id/userDataFragment"
         android:name="com.bliitz.app.main_ui.fragment.menu.profile.UserDataFragment"
@@ -229,19 +208,16 @@
         android:id="@+id/filterResultsFragment"
         android:name="com.bliitz.app.main_ui.fragment.menu.advanced_filter.FilterResultsFragment"
         android:label="fragment_filter_results"
-        tools:layout="@layout/fragment_filter_results" >
-        <action
-            android:id="@+id/action_filterResultsFragment_to_productDetailFragment"
-            app:destination="@id/productDetailFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-    </fragment>
+        tools:layout="@layout/fragment_filter_results" />
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.bliitz.app.main_ui.fragment.auth.register.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.bliitz.app.main_ui.fragment.menu.home.ProductDetailFragment"
+        android:label="fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail" />
 
 </navigation>

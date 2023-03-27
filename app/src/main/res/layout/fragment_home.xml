@@ -29,6 +29,19 @@
                     android:layout_height="wrap_content"
                     android:overScrollMode="never"/>
 
+                <EditText
+                    style="@style/mainEditText"
+                    android:id="@+id/name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:drawableStart="@drawable/ic_search"
+                    android:hint="Pesquisar"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
