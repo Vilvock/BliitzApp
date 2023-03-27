@@ -68,15 +68,15 @@ class MultipleIntroContainerFragment : BaseFragment() {
         }
 
         fragmentList.add(
-            IntroType1Fragment("A Água da Serra é uma marca historicamente jovem.", "", 0)
+            IntroType1Fragment("Lorem ipsum", "", 0)
         )
 
         fragmentList.add(
-            IntroType1Fragment("Agora com mais sabores além do original", "", 1)
+            IntroType1Fragment("Lorem ipsum", "", 1)
         )
 
         fragmentList.add(
-            IntroType1Fragment("Sabores para todos os gostos", "", 2)
+            IntroType1Fragment("Lorem ipsum", "", 2)
         )
 
 

@@ -55,7 +55,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Permitir localização"
-                    android:textColor="@color/white"
                     android:textSize="@dimen/text_size7"
                     android:textStyle="bold" />
 
@@ -63,7 +62,6 @@
                     android:id="@+id/about_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="24dp"
                     android:text="é necessário permitir o acesso à sua localização antes de prosseguir"

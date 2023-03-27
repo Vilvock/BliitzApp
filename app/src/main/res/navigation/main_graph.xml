@@ -157,32 +157,6 @@
             app:popUpToInclusive="true"/>
     </fragment>
     <fragment
-        android:id="@+id/cartFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.cart.CartFragment"
-        android:label="fragment_cart"
-        tools:layout="@layout/fragment_cart" >
-        <action
-            android:id="@+id/action_cartFragment_to_methodPaymentFragment"
-            app:destination="@id/methodPaymentFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-    </fragment>
-    <fragment
-        android:id="@+id/ordersFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.orders.OrdersFragment"
-        android:label="fragment_orders"
-        tools:layout="@layout/fragment_orders" >
-        <action
-            android:id="@+id/action_ordersFragment_to_orderDetailFragment"
-            app:destination="@id/orderDetailFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"  />
-    </fragment>
-    <fragment
         android:id="@+id/favoritesFragment"
         android:name="com.bliitz.app.main_ui.fragment.menu.favorites.FavoritesFragment"
         android:label="fragment_favorites"
@@ -201,13 +175,6 @@
         android:label="fragment_main_menu"
         tools:layout="@layout/fragment_main_menu" >
         <action
-            android:id="@+id/action_mainMenuFragment_to_userAddressFragment"
-            app:destination="@id/userAddressFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-        <action
             android:id="@+id/action_mainMenuFragment_to_categoriesFragment"
             app:destination="@id/categoriesFragment"
             app:enterAnim="@anim/slide_in_right"
@@ -223,16 +190,6 @@
             app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
-        android:id="@+id/signUpFragment"
-        android:name="com.bliitz.app.main_ui.fragment.auth.register.SignUpFragment"
-        android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
-    <fragment
-        android:id="@+id/userAddressFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.profile.UserAddressFragment"
-        android:label="fragment_user_address"
-        tools:layout="@layout/fragment_user_address" />
-    <fragment
         android:id="@+id/categoriesFragment"
         android:name="com.bliitz.app.main_ui.fragment.menu.profile.CategoriesFragment"
         android:label="fragment_categories"
@@ -246,33 +203,6 @@
             app:popExitAnim="@anim/slide_out_right"  />
     </fragment>
     <fragment
-        android:id="@+id/methodPaymentFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.cart.MethodPaymentFragment"
-        android:label="fragment_method_payment"
-        tools:layout="@layout/fragment_method_payment" >
-        <action
-            android:id="@+id/action_methodPaymentFragment_to_userAddressFragment"
-            app:destination="@id/userAddressFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-        <action
-            android:id="@+id/action_methodPaymentFragment_to_pixFragment"
-            app:destination="@id/pixFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-        <action
-            android:id="@+id/action_methodPaymentFragment_to_ticketFragment"
-            app:destination="@id/ticketFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-    </fragment>
-    <fragment
         android:id="@+id/productDetailFragment"
         android:name="com.bliitz.app.main_ui.fragment.menu.home.ProductDetailFragment"
         android:label="fragment_product_detail"
@@ -282,60 +212,6 @@
         android:name="com.bliitz.app.main_ui.fragment.menu.profile.UserDataFragment"
         android:label="UserDataFragment"
         tools:layout="@layout/fragment_user_data"  />
-    <fragment
-        android:id="@+id/orderDetailFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.orders.OrderDetailFragment"
-        android:label="fragment_order_detail"
-        tools:layout="@layout/fragment_order_detail" />
-    <fragment
-        android:id="@+id/pixFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.cart.shop.pix.PixFragment"
-        android:label="fragment_pix"
-        tools:layout="@layout/fragment_pix" >
-        <action
-            android:id="@+id/action_pixFragment_to_generatePixFragment"
-            app:destination="@id/generatePixFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-    </fragment>
-    <fragment
-        android:id="@+id/ticketFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.cart.shop.ticket.TicketFragment"
-        android:label="fragment_ticket"
-        tools:layout="@layout/fragment_ticket" >
-        <action
-            android:id="@+id/action_ticketFragment_to_generateTicketFragment"
-            app:destination="@id/generateTicketFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-    </fragment>
-    <fragment
-        android:id="@+id/generatePixFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.cart.shop.pix.GeneratePixFragment"
-        android:label="GeneratePixFragment"
-        tools:layout="@layout/fragment_generate_pix">
-        <action
-            android:id="@+id/action_generatePixFragment_to_successFragment"
-            app:destination="@id/successFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-    </fragment>
-    <fragment
-        android:id="@+id/generateTicketFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.cart.shop.ticket.GenerateTicketFragment"
-        android:label="fragment_generate_ticket"
-        tools:layout="@layout/fragment_generate_ticket" />
-    <fragment
-        android:id="@+id/successFragment"
-        android:name="com.aguadaserra.app.main_ui.fragment.menu.cart.shop.SuccessFragment"
-        android:label="fragment_success"
-        tools:layout="@layout/fragment_success" />
     <fragment
         android:id="@+id/filterFragment"
         android:name="com.bliitz.app.main_ui.fragment.menu.advanced_filter.FilterFragment"
@@ -362,5 +238,10 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
     </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.bliitz.app.main_ui.fragment.auth.register.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
 
 </navigation>

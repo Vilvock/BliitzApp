@@ -37,44 +37,44 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
             android:orientation="vertical"
             android:padding="@dimen/padding_application">
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="E-mail"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/mainEditText"
+                android:id="@+id/email_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication">
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
 
-                <EditText
-                    android:id="@+id/email_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="E-mail"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication"
-                app:passwordToggleEnabled="true">
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="Senha"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/password_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Senha"
-                    android:inputType="textPassword"
-                    android:maxLines="1" />
-
-            </com.google.android.material.textfield.TextInputLayout>
+            <EditText
+                style="@style/mainEditText"
+                android:id="@+id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLines="1" />
 
 
             <TextView
