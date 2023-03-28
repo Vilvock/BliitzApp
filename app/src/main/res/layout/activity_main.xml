@@ -65,8 +65,7 @@
                     app:maxImageSize="24dp"
                     android:backgroundTint="@color/colorAccent"
                     app:backgroundTint="@android:color/transparent"
-                    app:fabSize="mini"
-                    android:visibility="gone"/>
+                    app:fabSize="mini"/>
 
 
 
@@ -132,16 +131,16 @@
                 </com.google.android.material.bottomappbar.BottomAppBar>
 
 
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/main_fab"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_anchor="@id/bottomAppBar"
-                    android:clickable="true"
-                    android:src="@drawable/ic_camera"
-                    android:backgroundTint="@color/colorPrimary"
-                    app:backgroundTint="@android:color/transparent"
-                    app:tint="@color/white" />
+<!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                    android:id="@+id/main_fab"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:layout_anchor="@id/bottomAppBar"-->
+<!--                    android:clickable="true"-->
+<!--                    android:src="@drawable/ic_camera"-->
+<!--                    android:backgroundTint="@color/colorPrimary"-->
+<!--                    app:backgroundTint="@android:color/transparent"-->
+<!--                    app:tint="@color/white" />-->
 
             </androidx.coordinatorlayout.widget.CoordinatorLayout>
         </FrameLayout>

@@ -7,7 +7,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bliitz.app.R
 import com.bliitz.app.global_ui.config_fragment.BaseFragment
+import com.bliitz.app.main_ui.adapter.FavoriteAdapter
 import com.bliitz.app.util.RecyclerItemListener
+import kotlinx.android.synthetic.main.fragment_favorites.*
 
 /**
  * A simple [Fragment] subclass.
@@ -31,26 +33,26 @@ class FavoritesFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        val list = ArrayList<Any>()
-//
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//
-//        val adapter = FavoriteAdapter(requireActivity(), list, object : RecyclerItemListener {
-//            override fun onClickListenerItem(item: Any?) {
-//                super.onClickListenerItem(item)
-//
+        val list = ArrayList<Any>()
+
+        list.add(Any())
+        list.add(Any())
+        list.add(Any())
+        list.add(Any())
+        list.add(Any())
+
+        val adapter = FavoriteAdapter(requireActivity(), list, object : RecyclerItemListener {
+            override fun onClickListenerItem(item: Any?) {
+                super.onClickListenerItem(item)
+
 //                navigation.navigate(R.id.action_favoritesFragment_to_productDetailFragment)
-//            }
-//
-//        })
-//        val layoutManagerRv: RecyclerView.LayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-//
-//        favorites_rv.layoutManager = layoutManagerRv
-//        favorites_rv.adapter = adapter
+            }
+
+        })
+        val layoutManagerRv: RecyclerView.LayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+
+        favorites_rv.layoutManager = layoutManagerRv
+        favorites_rv.adapter = adapter
     }
 
 

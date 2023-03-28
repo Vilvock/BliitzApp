@@ -11,9 +11,9 @@
         android:title="@string/tire"
         android:icon="@drawable/ic_filter"/>
 
-    <item
-        android:id="@+id/navigation_plan"
-        android:title="@string/plan"/>
+<!--    <item-->
+<!--        android:id="@+id/navigation_plan"-->
+<!--        android:title="@string/plan"/>-->
 
     <item
         android:id="@+id/navigation_favorites"

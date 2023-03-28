@@ -18,6 +18,7 @@
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/activity_main.xml" value="0.3625" />
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/activity_webview.xml" value="0.3625" />
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/adapter_carrousel_item.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/adapter_carrousel_product_item.xml" value="0.3625" />
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/adapter_category_grid.xml" value="0.3625" />
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/adapter_favorite.xml" value="0.3625" />
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/adapter_notification.xml" value="0.3625" />
@@ -25,6 +26,8 @@
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/adapter_product_grid.xml" value="0.3625" />
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/empty_list.xml" value="0.3625" />
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/fragment_categories.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/fragment_favorites.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/fragment_filter.xml" value="0.3625" />
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/fragment_generic_dialog.xml" value="0.3625" />
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/fragment_getting_location_permission.xml" value="0.3625" />
         <entry key="..\:/AndroidStudioProjects/my/BliitzApp/app/src/main/res/layout/fragment_home.xml" value="0.3625" />

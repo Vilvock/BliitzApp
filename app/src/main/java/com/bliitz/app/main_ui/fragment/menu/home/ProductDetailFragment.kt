@@ -8,7 +8,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bliitz.app.R
+import com.bliitz.app.global_ui.components.CircleRecyclerViewDecoration
 import com.bliitz.app.global_ui.config_fragment.BaseFragment
+import com.bliitz.app.main_ui.adapter.CarrouselProductItemAdapter
+import kotlinx.android.synthetic.main.fragment_product_detail.*
 
 /**
  * A simple [Fragment] subclass.
@@ -32,38 +35,38 @@ class ProductDetailFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        loadCarrousel()
+        loadCarrousel()
 
     }
 
 
 
-//
-//    private fun loadCarrousel() {
-//
-//
-//
-//        val photoList = ArrayList<Int>()
-//
-//        photoList.add(R.drawable.randon1)
-//        photoList.add(R.drawable.randon2)
-//        photoList.add(R.drawable.randon3)
-//        photoList.add(R.drawable.randon4)
-//
-//        val adapter = CarrouselProductItemAdapter(photoList)
-//
-//
-//        carrousel_rv.layoutManager = (object : LinearLayoutManager(requireContext(), HORIZONTAL, false) {
-//            override fun checkLayoutParams(lp: RecyclerView.LayoutParams): Boolean {
-//                // force height of viewHolder here, this will override layout_height from xml
+
+    private fun loadCarrousel() {
+
+
+
+        val photoList = ArrayList<Int>()
+
+        photoList.add(R.drawable.main_logo1)
+        photoList.add(R.drawable.main_logo1)
+        photoList.add(R.drawable.main_logo1)
+        photoList.add(R.drawable.main_logo1)
+
+        val adapter = CarrouselProductItemAdapter(photoList)
+
+
+        carrousel_rv.layoutManager = (object : LinearLayoutManager(requireContext(), HORIZONTAL, false) {
+            override fun checkLayoutParams(lp: RecyclerView.LayoutParams): Boolean {
+                // force height of viewHolder here, this will override layout_height from xml
 //                lp.width = (width / 1.34).toInt()
-//                return true
-//            }
-//        })
-//
-//        carrousel_rv.adapter = adapter
-//
-//
-//        carrousel_rv.addItemDecoration(CircleRecyclerViewDecoration(requireActivity()))
-//    }
+                return true
+            }
+        })
+
+        carrousel_rv.adapter = adapter
+
+
+        carrousel_rv.addItemDecoration(CircleRecyclerViewDecoration(requireActivity()))
+    }
 }

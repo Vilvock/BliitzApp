@@ -59,12 +59,12 @@
 
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/greenMoney"
-                            android:text="lorem_ipsum"
-                            android:ellipsize="end"
-                            android:textSize="@dimen/text_size3"/>
+                            android:layout_weight="0"
+                            android:text="nome da loja"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"/>
 
 
                         <TextView
@@ -83,7 +83,7 @@
                             android:id="@+id/lastMessage_tv"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
+                            android:layout_marginTop="12dp"
                             android:text="@string/lorem_ipsum"
                             android:ellipsize="end"
                             android:textSize="@dimen/text_size3"/>
@@ -123,7 +123,8 @@
                             android:ellipsize="end"
                             android:maxLines="1"
                             android:text="R$ 50,00"
-                            android:textSize="@dimen/text_size5"/>
+                            android:textSize="@dimen/text_size5"
+                            android:textColor="@color/colorPrimary"/>
 
 
 

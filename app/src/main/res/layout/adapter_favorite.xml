@@ -39,12 +39,30 @@
                 android:layout_alignTop="@id/avatar_iv"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/name_tv"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
-                    android:textStyle="bold" />
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="nome da loja"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"/>
+                </LinearLayout>
+
+
 
                 <TextView
                     android:id="@+id/lastMessage_tv"
@@ -62,6 +80,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="4dp"
+                    android:textColor="@color/colorPrimary"
                     android:text="R$ 50,00"/>
 
 
@@ -80,6 +99,7 @@
                         android:layout_width="16dp"
                         android:layout_height="16dp"
                         android:layout_marginEnd="4dp"
+                        android:src="@drawable/ic_add_cart"
                         android:background="@android:color/transparent"/>
 
                     <TextView
@@ -97,6 +117,7 @@
                         android:layout_width="16dp"
                         android:layout_height="16dp"
                         android:layout_marginEnd="4dp"
+                        android:src="@drawable/ic_trash"
                         android:background="@android:color/transparent"/>
 
                     <TextView

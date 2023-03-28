@@ -49,6 +49,7 @@ class HomeFragment : BaseFragment() {
         setHasOptionsMenu(true)
 
         loadCarrousel()
+//        loadCarrouselSales()
 
         val list = ArrayList<Any>()
 
@@ -118,6 +119,7 @@ class HomeFragment : BaseFragment() {
     private fun loadCarrousel() {
 
 
+        fragmentList.clear()
         fragmentList.add(PhotoContainerFrag(""))
         fragmentList.add(PhotoContainerFrag(""))
         fragmentList.add(PhotoContainerFrag(""))
@@ -126,7 +128,7 @@ class HomeFragment : BaseFragment() {
 
         containerPhotosPager.adapter = adapter
 
-        indicator.setViewPager(containerPhotosPager)
+//        indicator.setViewPager(containerPhotosPager)
 
         containerPhotosPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrolled(
@@ -144,5 +146,29 @@ class HomeFragment : BaseFragment() {
         })
 
         handler.postDelayed(imageRunnable, (7 * 1000).toLong())
+    }
+
+    private fun loadCarrouselSales() {
+
+        val photoList = ArrayList<Int>()
+
+        photoList.add(R.drawable.main_logo1)
+        photoList.add(R.drawable.main_logo2)
+
+        val adapter = CarrouselItemAdapter(photoList)
+
+//
+//        carrousel_rv.layoutManager = (object : LinearLayoutManager(requireContext(), HORIZONTAL, false) {
+//            override fun checkLayoutParams(lp: RecyclerView.LayoutParams): Boolean {
+//                // force height of viewHolder here, this will override layout_height from xml
+//                lp.width = (width / 1.34).toInt()
+//                return true
+//            }
+//        })
+//
+//        carrousel_rv.adapter = adapter
+//
+//
+//        carrousel_rv.addItemDecoration(CircleRecyclerViewDecoration(requireActivity()))
     }
 }

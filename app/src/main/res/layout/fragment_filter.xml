@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".main_ui.fragment.menu.home.FilterFragment">
+    tools:context=".main_ui.fragment.menu.advanced_filter.FilterFragment">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefresh"
@@ -22,27 +22,38 @@
                 android:padding="@dimen/padding_application"
                 android:orientation="vertical">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                <EditText
+                    style="@style/mainEditText"
+                    android:id="@+id/name_et"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:layout_weight="0"
-                    android:textColorHint="@color/grayApplication">
+                    android:drawableStart="@drawable/ic_search"
+                    android:hint="Pesquisar"
+                    android:inputType="text"
+                    android:maxLines="1" />
 
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Pesquisa..."
-                        android:maxLines="1" />
-
-                </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Categoria:"
+                    android:text="Raio(km):"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/text_size3"/>
+
+
+                <com.google.android.material.slider.RangeSlider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Categorias:"
                     android:ellipsize="end"
                     android:textSize="@dimen/text_size3"/>
 
@@ -52,13 +63,13 @@
                     android:layout_marginTop="12dp"
                     android:background="@drawable/shape_main_spinner">
 
-                    <Spinner
-                        android:id="@+id/typePerson_sp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:entries="@array/type_person"
-                        android:paddingTop="16dp"
-                        android:paddingBottom="16dp" />
+<!--                    <Spinner-->
+<!--                        android:id="@+id/typePerson_sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:entries="@array/type_person"-->
+<!--                        android:paddingTop="16dp"-->
+<!--                        android:paddingBottom="16dp" />-->
 
                 </FrameLayout>
 
@@ -77,6 +88,7 @@
                     android:layout_marginTop="12dp"
                     />
 
+
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -85,7 +97,6 @@
                         android:id="@+id/filter_bt"
                         style="@style/StyleButtonSmall"
                         android:layout_marginTop="24dp"
-                        android:layout_gravity="bottom"
                         android:text="Filtrar" />
 
                 </FrameLayout>

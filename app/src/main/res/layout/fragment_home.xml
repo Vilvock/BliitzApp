@@ -45,6 +45,12 @@
                         android:layout_gravity="bottom"/>
                 </FrameLayout>
 
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categories_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"/>
+
                 <EditText
                     style="@style/mainEditText"
                     android:id="@+id/name_et"
