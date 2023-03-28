@@ -23,11 +23,27 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/carrousel_rv"
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:overScrollMode="never"/>
+                    android:layout_height="match_parent"
+                    android:layout_weight="0">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/containerPhotosPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"/>
+
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:ci_drawable="@drawable/sh_selected"
+                        app:ci_drawable_unselected="@drawable/sh_unselected"
+                        app:ci_height="6dp"
+                        app:ci_width="6dp"
+                        android:layout_gravity="bottom"/>
+                </FrameLayout>
 
                 <EditText
                     style="@style/mainEditText"

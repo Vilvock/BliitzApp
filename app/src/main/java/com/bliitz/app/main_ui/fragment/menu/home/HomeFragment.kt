@@ -1,19 +1,24 @@
 package com.bliitz.app.main_ui.fragment.menu.home
 
 import android.os.Bundle
+import android.os.Handler
 import android.view.*
 import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.viewpager.widget.ViewPager
 import com.bliitz.app.R
 import com.bliitz.app.global_ui.components.CircleRecyclerViewDecoration
 import com.bliitz.app.global_ui.config_fragment.BaseFragment
 import com.bliitz.app.main_ui.adapter.CarrouselItemAdapter
 import com.bliitz.app.main_ui.adapter.ProductAdapter
 import com.bliitz.app.main_ui.adapter.ProductGridAdapter
+import com.bliitz.app.main_ui.adapter.ViewPagerFragmentAdapter
 import com.bliitz.app.util.RecyclerItemListener
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -26,6 +31,10 @@ class HomeFragment : BaseFragment() {
     override var bottomNavigationVisibility: Boolean = true
 
     override var title: String = "Home"
+
+    private val handler = Handler()
+    private var imageRunnable = Runnable { showAnimate() }
+    private var fragmentList = ArrayList<Fragment>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -77,54 +86,63 @@ class HomeFragment : BaseFragment() {
         productsGrid_rv.adapter = adapterGrid
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.toolbar_notification_menu, menu)
-//
-//        val menuItem = menu.findItem(R.id.notification_nav)
-//
-//        val actionView = menuItem.actionView
-//        textCartItemCount = actionView.findViewById(R.id.cart_badge) as TextView
-//        val bellIcon = actionView.findViewById(R.id.bell_icon) as FrameLayout
-//
-//        bellIcon.setOnClickListener {
-//
-//            navigation.navigate(R.id.action_userProfileFragment_to_notificationsFragment)
-//        }
-
-        super.onCreateOptionsMenu(menu, inflater)
+    override fun onDestroy() {
+        super.onDestroy()
+        handler.removeCallbacks(imageRunnable)
     }
 
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        return when (item.itemId) {
-//            R.id.search_nav -> {
-//                navigation.navigate(R.id.action_homeFragment_to_filterFragment)
-//                super.onOptionsItemSelected(item)
-//            }
-//            else -> super.onOptionsItemSelected(item)
-//        }
-//    }
+    override fun onPause() {
+        super.onPause()
+        handler.removeCallbacks(imageRunnable)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        handler.removeCallbacks(imageRunnable)
+    }
+
+    private fun showAnimate() {
+
+        if (containerPhotosPager.currentItem == fragmentList.size - 1) {
+
+            containerPhotosPager.currentItem = 0
+        } else {
+
+            containerPhotosPager.currentItem++
+        }
+
+        handler.postDelayed(imageRunnable, (7 * 1000).toLong())
+
+    }
 
     private fun loadCarrousel() {
 
-        val photoList = ArrayList<Int>()
 
-        photoList.add(R.drawable.main_logo1)
-        photoList.add(R.drawable.main_logo2)
+        fragmentList.add(PhotoContainerFrag(""))
+        fragmentList.add(PhotoContainerFrag(""))
+        fragmentList.add(PhotoContainerFrag(""))
 
-        val adapter = CarrouselItemAdapter(photoList)
+        val adapter = ViewPagerFragmentAdapter(requireActivity().supportFragmentManager, lifecycle, fragmentList)
 
+        containerPhotosPager.adapter = adapter
 
-        carrousel_rv.layoutManager = (object : LinearLayoutManager(requireContext(), HORIZONTAL, false) {
-            override fun checkLayoutParams(lp: RecyclerView.LayoutParams): Boolean {
-                // force height of viewHolder here, this will override layout_height from xml
-                lp.width = (width / 1.34).toInt()
-                return true
+        indicator.setViewPager(containerPhotosPager)
+
+        containerPhotosPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+            override fun onPageScrolled(
+                position: Int,
+                positionOffset: Float,
+                positionOffsetPixels: Int
+            ) {
             }
+
+            override fun onPageSelected(position: Int) {
+
+            }
+
+            override fun onPageScrollStateChanged(state: Int) {}
         })
 
-        carrousel_rv.adapter = adapter
-
-
-        carrousel_rv.addItemDecoration(CircleRecyclerViewDecoration(requireActivity()))
+        handler.postDelayed(imageRunnable, (7 * 1000).toLong())
     }
 }

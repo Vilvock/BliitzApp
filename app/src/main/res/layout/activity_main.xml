@@ -22,7 +22,7 @@
             android:layout_height="?attr/actionBarSize">
 
             <!--            app:layout_scrollFlags="scroll|enterAlways"-->
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -54,8 +54,23 @@
                     android:textSize="@dimen/text_size6"
                     tools:text="Titulo" />
 
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/bell_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="16dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_bell"
+                    app:maxImageSize="24dp"
+                    android:backgroundTint="@color/colorAccent"
+                    app:backgroundTint="@android:color/transparent"
+                    app:fabSize="mini"
+                    android:visibility="gone"/>
 
-            </LinearLayout>
+
+
+            </FrameLayout>
 
 
         </androidx.appcompat.widget.Toolbar>
