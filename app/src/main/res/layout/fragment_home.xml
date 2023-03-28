@@ -52,7 +52,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Destaques"
+                        android:text="Mais vendidos"
                         android:textSize="@dimen/text_size5"
                         android:textStyle="bold"/>
 
@@ -95,7 +95,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Outras ofertas"
+                        android:text="Produtos a 20km de você"
                         android:textSize="@dimen/text_size5"
                         android:textStyle="bold"/>
 

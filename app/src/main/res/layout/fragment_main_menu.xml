@@ -4,7 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightGrayApplication"
     tools:context=".main_ui.fragment.menu.profile.MainMenuFragment">
 
 
@@ -22,268 +21,174 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="@dimen/padding_application"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/avatar_iv"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/person"
+                    android:background="@android:color/transparent"
+                    app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_margin="16dp">
+                    android:layout_marginTop="4dp"
+                    android:text="Olá,"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size5" />
 
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/avatar_iv"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_gravity="center"
-                        android:scaleType="centerCrop"
-                        android:background="@android:color/transparent"
-                        app:shapeAppearanceOverlay="@style/roundedImageView" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/name_tv"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Lorem Ipsum Nome"
-                            android:maxLines="2"
-                            android:ellipsize="end"
-                            android:textStyle="bold"
-                            android:textSize="@dimen/text_size5"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="email@emai.com.br"
-                            android:maxLines="1"
-                            android:ellipsize="end"
-                            android:textSize="@dimen/text_size3"/>
-                    </LinearLayout>
-
-
-
-
-
-                    <ImageButton
-                        android:id="@+id/userData_ib"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:clickable="false"
-                        android:layout_marginStart="8dp"
-                        android:background="@android:color/transparent"
-                        android:src="@drawable/ic_next" />
-
-                </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="@dimen/padding_application"
-                android:background="@color/white"
-                android:elevation="10dp">
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:textSize="@dimen/text_size7"
+                    android:text="Nome usuário"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:textColor="@color/black" />
 
 
                 <LinearLayout
-                    android:id="@+id/address_ll"
+                    android:id="@+id/userData_ll"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
                     android:gravity="center_vertical"
+                    android:layout_weight="0"
                     android:orientation="horizontal">
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:background="@android:color/transparent" />
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_user"/>
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:text="Editar Perfil"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textStyle="bold"/>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Meus endereços"
-                            android:maxLines="1"
-                            android:ellipsize="end"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Atualize ou determine seu endereço principal"
-                            android:maxLines="1"
-                            android:ellipsize="end"
-                            android:textSize="@dimen/text_size3"/>
-
-                    </LinearLayout>
 
                 </LinearLayout>
-
-
-                <View style="@style/Divider.Horizontal"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"/>
 
                 <LinearLayout
                     android:id="@+id/categories_ll"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
                     android:gravity="center_vertical"
+                    android:layout_weight="0"
                     android:orientation="horizontal">
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:background="@android:color/transparent" />
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_category"/>
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:text="Categorias"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textStyle="bold"/>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Categorias"
-                            android:maxLines="1"
-                            android:ellipsize="end"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Visualize categorias de ofertas"
-                            android:maxLines="1"
-                            android:ellipsize="end"
-                            android:textSize="@dimen/text_size3"/>
-
-                    </LinearLayout>
 
                 </LinearLayout>
-
-
-                <View style="@style/Divider.Horizontal"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"/>
 
                 <LinearLayout
-                    android:id="@+id/support_ll"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
                     android:gravity="center_vertical"
+                    android:layout_weight="0"
                     android:orientation="horizontal">
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:background="@android:color/transparent" />
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_support"/>
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:text="Suporte"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textStyle="bold"/>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Suporte"
-                            android:maxLines="1"
-                            android:ellipsize="end"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Contacte o suporte"
-                            android:maxLines="1"
-                            android:ellipsize="end"
-                            android:textSize="@dimen/text_size3"/>
-
-                    </LinearLayout>
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:orientation="horizontal">
 
-                <View style="@style/Divider.Horizontal"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_disable"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Desativar conta"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/logout_ll"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
                     android:gravity="center_vertical"
+                    android:layout_weight="0"
                     android:orientation="horizontal">
 
-                    <ImageButton
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:background="@android:color/transparent" />
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_exit"/>
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:text="Sair"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textStyle="bold"/>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Sair"
-                            android:maxLines="1"
-                            android:ellipsize="end"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Deslogar desta conta"
-                            android:maxLines="1"
-                            android:ellipsize="end"
-                            android:textSize="@dimen/text_size3"/>
-
-                    </LinearLayout>
 
                 </LinearLayout>
-
-
-                <View style="@style/Divider.Horizontal"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"/>
-
-            </LinearLayout>
-
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
 

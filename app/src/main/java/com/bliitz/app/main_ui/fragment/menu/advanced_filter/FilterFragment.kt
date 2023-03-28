@@ -14,9 +14,8 @@ import kotlinx.android.synthetic.main.fragment_filter.*
  */
 class FilterFragment : BaseFragment() {
 
-    override var hasBackButton: Boolean = true
     override var toolbarVisibility: Boolean = true
-    override var bottomNavigationVisibility: Boolean = false
+    override var bottomNavigationVisibility: Boolean = true
 
     override var title: String = "Filtro de ofertas"
 

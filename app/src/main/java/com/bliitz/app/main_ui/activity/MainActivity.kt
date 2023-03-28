@@ -100,24 +100,24 @@ class MainActivity : AppCompatActivity(), BaseActivity {
 
                 navController.popBackStack()
 
-//                when (item.itemId) {
-//                    R.id.navigation_home -> {
-//                        navController.navigate(R.id.homeFragment)
-//                    }
-//                    R.id.navigation_cart-> {
-//                        navController.navigate(R.id.cartFragment)
-//                    }
+                when (item.itemId) {
+                    R.id.navigation_home -> {
+                        navController.navigate(R.id.homeFragment)
+                    }
+                    R.id.navigation_filter-> {
+                        navController.navigate(R.id.filterFragment)
+                    }
 //                    R.id.navigation_orders -> {
 //                        navController.navigate(R.id.ordersFragment)
 //                    }
-//                    R.id.navigation_favorites -> {
-//                        navController.navigate(R.id.favoritesFragment)
-//                    }
-//                    R.id.navigation_profile -> {
-//                        navController.navigate(R.id.mainMenuFragment)
-//                    }
-//
-//                }
+                    R.id.navigation_favorites -> {
+                        navController.navigate(R.id.favoritesFragment)
+                    }
+                    R.id.navigation_profile -> {
+                        navController.navigate(R.id.mainMenuFragment)
+                    }
+
+                }
                 true
             }
         } else {
