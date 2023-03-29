@@ -45,7 +45,7 @@ class FavoritesFragment : BaseFragment() {
             override fun onClickListenerItem(item: Any?) {
                 super.onClickListenerItem(item)
 
-//                navigation.navigate(R.id.action_favoritesFragment_to_productDetailFragment)
+                navigation.navigate(R.id.action_favoritesFragment_to_productDetailFragment)
             }
 
         })

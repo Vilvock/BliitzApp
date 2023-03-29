@@ -9,6 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bliitz.app.R
 import com.bliitz.app.global_ui.config_fragment.BaseFragment
+import com.bliitz.app.main_ui.adapter.ProductAdapter
+import com.bliitz.app.util.RecyclerItemListener
+import kotlinx.android.synthetic.main.fragment_filter_results.*
 
 /**
  * A simple [Fragment] subclass.
@@ -34,28 +37,28 @@ class FilterResultsFragment : BaseFragment() {
 
 
 
-//        val list = ArrayList<Any>()
-//
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//        list.add(Any())
-//
-//        val adapter = ProductAdapter(requireActivity(), list, object : RecyclerItemListener {
-//            override fun onClickListenerItem(item: Any?) {
-//                super.onClickListenerItem(item)
-//
-//                navigation.navigate(R.id.action_filterResultsFragment_to_productDetailFragment)
-//            }
-//
-//        })
-//        val layoutManagerRv: RecyclerView.LayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-//
-//        results_rv.layoutManager = layoutManagerRv
-//        results_rv.adapter = adapter
+        val list = ArrayList<Any>()
+
+        list.add(Any())
+        list.add(Any())
+        list.add(Any())
+        list.add(Any())
+        list.add(Any())
+        list.add(Any())
+        list.add(Any())
+
+        val adapter = ProductAdapter(requireActivity(), list, object : RecyclerItemListener {
+            override fun onClickListenerItem(item: Any?) {
+                super.onClickListenerItem(item)
+
+                navigation.navigate(R.id.action_filterResultsFragment_to_productDetailFragment)
+            }
+
+        })
+        val layoutManagerRv: RecyclerView.LayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+
+        results_rv.layoutManager = layoutManagerRv
+        results_rv.adapter = adapter
     }
 
 }

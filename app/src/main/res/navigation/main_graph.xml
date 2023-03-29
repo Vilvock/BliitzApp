@@ -160,7 +160,15 @@
         android:id="@+id/favoritesFragment"
         android:name="com.bliitz.app.main_ui.fragment.menu.favorites.FavoritesFragment"
         android:label="fragment_favorites"
-        tools:layout="@layout/fragment_favorites" />
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/mainMenuFragment"
         android:name="com.bliitz.app.main_ui.fragment.menu.profile.MainMenuFragment"
@@ -208,7 +216,15 @@
         android:id="@+id/filterResultsFragment"
         android:name="com.bliitz.app.main_ui.fragment.menu.advanced_filter.FilterResultsFragment"
         android:label="fragment_filter_results"
-        tools:layout="@layout/fragment_filter_results" />
+        tools:layout="@layout/fragment_filter_results" >
+        <action
+            android:id="@+id/action_filterResultsFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"  />
+    </fragment>
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.bliitz.app.main_ui.fragment.auth.register.SignUpFragment"
