@@ -53,8 +53,7 @@
                     android:textStyle="bold"
                     android:ellipsize="end"
                     android:maxLines="2"
-                    android:minLines="2"
-                    android:textColor="@color/black" />
+                    android:minLines="2" />
 
 
                 <LinearLayout
@@ -70,7 +69,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
-                        android:src="@drawable/ic_user"/>
+                        android:src="@drawable/ic_user"
+                        app:tint="@color/white" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -97,7 +97,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
-                        android:src="@drawable/ic_category"/>
+                        android:src="@drawable/ic_category"
+                        app:tint="@color/white" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -123,7 +124,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
-                        android:src="@drawable/ic_support"/>
+                        android:src="@drawable/ic_support"
+                        app:tint="@color/white" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -149,7 +151,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
-                        android:src="@drawable/ic_disable"/>
+                        android:src="@drawable/ic_disable"
+                        app:tint="@color/white" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -176,7 +179,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
-                        android:src="@drawable/ic_exit"/>
+                        android:src="@drawable/ic_exit"
+                        app:tint="@color/white" />
 
                     <TextView
                         android:layout_width="match_parent"

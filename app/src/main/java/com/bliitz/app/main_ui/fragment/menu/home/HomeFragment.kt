@@ -15,8 +15,10 @@ import androidx.viewpager.widget.ViewPager
 import com.bliitz.app.R
 import com.bliitz.app.global_ui.components.CircleRecyclerViewDecoration
 import com.bliitz.app.global_ui.config_fragment.BaseFragment
+import com.bliitz.app.main_ui.activity.MainActivity
 import com.bliitz.app.main_ui.adapter.*
 import com.bliitz.app.util.RecyclerItemListener
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
 /**
@@ -100,6 +102,12 @@ class HomeFragment : BaseFragment() {
 
         productsGrid_rv.layoutManager = GridLayoutManager(requireContext(), 2)
         productsGrid_rv.adapter = adapterGrid
+
+        val actContext = requireActivity() as MainActivity
+
+        actContext.bell_fab.setOnClickListener {
+            navigation.navigate(R.id.action_homeFragment_to_notificationsFragment)
+        }
     }
 
     override fun onDestroy() {

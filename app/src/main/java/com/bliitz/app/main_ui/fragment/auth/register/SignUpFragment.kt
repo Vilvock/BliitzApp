@@ -79,7 +79,7 @@ class SignUpFragment : BaseFragment() {
                 override fun updateDrawState(ds: TextPaint) {
                     super.updateDrawState(ds)
                     // this is where you set link color, underline, typeface etc.
-                    val linkColor = ContextCompat.getColor(requireActivity(), R.color.black)
+                    val linkColor = ContextCompat.getColor(requireActivity(), R.color.white)
                     ds.color = linkColor
                     ds.isUnderlineText = false
                     ds.typeface = Typeface.DEFAULT_BOLD

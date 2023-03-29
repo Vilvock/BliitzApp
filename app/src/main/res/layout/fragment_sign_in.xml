@@ -27,7 +27,6 @@
                 android:layout_gravity="start"
                 android:gravity="start"
                 android:text="Realize seu login"
-                android:textColor="@color/black"
                 android:textSize="@dimen/text_size7"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -45,7 +44,6 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginBottom="4dp"
                 android:text="E-mail"
-                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <EditText
@@ -64,7 +62,6 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginBottom="4dp"
                 android:text="Senha"
-                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <EditText

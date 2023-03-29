@@ -27,7 +27,6 @@
                 android:layout_gravity="start"
                 android:gravity="start"
                 android:text="Crie uma conta"
-                android:textColor="@color/black"
                 android:textSize="@dimen/text_size7"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -45,7 +44,6 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginBottom="4dp"
                 android:text="Nome"
-                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <EditText
@@ -64,7 +62,6 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginBottom="4dp"
                 android:text="E-mail"
-                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <EditText
@@ -83,7 +80,6 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginBottom="4dp"
                 android:text="Celular"
-                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <com.santalu.maskedittext.MaskEditText
@@ -102,7 +98,6 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginBottom="4dp"
                 android:text="Senha"
-                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <EditText
@@ -121,7 +116,6 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginBottom="4dp"
                 android:text="Confirmar Senha"
-                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <EditText
