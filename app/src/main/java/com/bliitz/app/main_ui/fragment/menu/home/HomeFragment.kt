@@ -15,10 +15,7 @@ import androidx.viewpager.widget.ViewPager
 import com.bliitz.app.R
 import com.bliitz.app.global_ui.components.CircleRecyclerViewDecoration
 import com.bliitz.app.global_ui.config_fragment.BaseFragment
-import com.bliitz.app.main_ui.adapter.CarrouselItemAdapter
-import com.bliitz.app.main_ui.adapter.ProductAdapter
-import com.bliitz.app.main_ui.adapter.ProductGridAdapter
-import com.bliitz.app.main_ui.adapter.ViewPagerFragmentAdapter
+import com.bliitz.app.main_ui.adapter.*
 import com.bliitz.app.util.RecyclerItemListener
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -72,6 +69,24 @@ class HomeFragment : BaseFragment() {
 
         products_rv.layoutManager = layoutManagerRv
         products_rv.adapter = adapter
+
+        val categoryAdapter = CategoryAdapter(requireActivity(), list, object : RecyclerItemListener {
+            override fun onClickListenerItem(item: Any?) {
+                super.onClickListenerItem(item)
+
+            }
+
+        })
+        val layoutManagerRvHorizontal: RecyclerView.LayoutManager = (object : LinearLayoutManager(requireContext(), HORIZONTAL, false) {
+            override fun checkLayoutParams(lp: RecyclerView.LayoutParams): Boolean {
+                // force height of viewHolder here, this will override layout_height from xml
+//                lp.width = (width / 2.6).toInt()
+                return true
+            }
+        })
+
+        categories_rv.layoutManager = layoutManagerRvHorizontal
+        categories_rv.adapter = categoryAdapter
 
         val adapterGrid = ProductGridAdapter(requireActivity(), list, object : RecyclerItemListener {
             override fun onClickListenerItem(item: Any?) {

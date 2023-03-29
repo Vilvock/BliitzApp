@@ -124,8 +124,35 @@
                             android:maxLines="1"
                             android:text="R$ 50,00"
                             android:textSize="@dimen/text_size5"
-                            android:textColor="@color/colorPrimary"/>
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"/>
 
+                        <LinearLayout
+                            android:id="@+id/google_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:background="@drawable/shape_default_radius"
+                            android:backgroundTint="@color/black"
+                            android:gravity="center_vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_weight="0"
+                                android:src="@drawable/whatsapp_logo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_weight="1"
+                                android:text="Comprar via Whatsapp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
 
                         <LinearLayout
@@ -133,7 +160,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="12dp"
                             android:gravity="center_vertical"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:visibility="gone">
 
 
                             <TextView
@@ -178,13 +206,7 @@
                                 android:backgroundTint="@color/colorAccent"
                                 app:backgroundTint="@android:color/transparent" />
 
-                            <com.bliitz.app.global_ui.components.ProgressButton
-                                android:id="@+id/add_bt"
-                                style="@style/StyleProgressButton"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="12dp"
-                                android:text="Adicionar" />
+
 
                         </LinearLayout>
                     </LinearLayout>

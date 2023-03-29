@@ -23,9 +23,26 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="Endereço atual:"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/text_size3"/>
+
+                <Spinner
+                    android:id="@+id/address_sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:entries="@array/default_array"/>
+
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
                     android:layout_weight="0">
 
                     <androidx.viewpager.widget.ViewPager
@@ -45,6 +62,30 @@
                         android:layout_gravity="bottom"/>
                 </FrameLayout>
 
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Categorias"
+                        android:textSize="@dimen/text_size5"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Ver mais"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                </LinearLayout>
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/categories_rv"
                     android:layout_width="match_parent"
@@ -53,12 +94,10 @@
 
                 <EditText
                     style="@style/mainEditText"
-                    android:id="@+id/name_et"
+                    android:id="@+id/search_et"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_margin="16dp"
                     android:drawableStart="@drawable/ic_search"
                     android:hint="Pesquisar"
                     android:inputType="text"

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/min_margin_application"
-    android:foreground="?android:attr/selectableItemBackground">
+    android:layout_margin="@dimen/min_margin_application">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -56,6 +55,13 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="nome da loja"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"/>
 
                 <TextView
                     android:id="@+id/name_tv"

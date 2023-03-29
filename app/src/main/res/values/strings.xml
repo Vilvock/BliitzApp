@@ -5,8 +5,8 @@
 
     <string name="default_notification_channel_id">fcm_default_channel</string>
 
-    <string-array name="type_person">
-        <item>Selecione</item>
+    <string-array name="default_array">
+        <item>Av. Ipiranga 100</item>
         <item>lorem ipsum</item>
         <item>lorem ipsum</item>
         <item>lorem ipsum</item>
