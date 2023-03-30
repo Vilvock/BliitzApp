@@ -57,21 +57,12 @@
                     android:ellipsize="end"
                     android:textSize="@dimen/text_size3"/>
 
-                <FrameLayout
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categories_rv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:background="@drawable/shape_main_spinner">
-
-<!--                    <Spinner-->
-<!--                        android:id="@+id/typePerson_sp"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:entries="@array/type_person"-->
-<!--                        android:paddingTop="16dp"-->
-<!--                        android:paddingBottom="16dp" />-->
-
-                </FrameLayout>
+                    android:overScrollMode="never"/>
 
                 <TextView
                     android:layout_width="match_parent"

@@ -26,7 +26,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Verificar Token"
-                android:textColor="@color/black"
                 android:textSize="@dimen/text_size7"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -51,7 +50,6 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginBottom="4dp"
                 android:text="Token"
-                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <EditText

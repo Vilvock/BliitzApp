@@ -29,7 +29,8 @@
                 android:text="title"
                 android:textAllCaps="true"
                 android:textSize="@dimen/text_size4"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/desc_tv"
@@ -39,7 +40,8 @@
                 android:layout_marginBottom="16dp"
                 android:layout_weight="1"
                 android:text="@string/lorem_ipsum"
-                android:textSize="@dimen/text_size4" />
+                android:textSize="@dimen/text_size4"
+                android:textColor="@color/black" />
 
 
             <TextView
@@ -48,7 +50,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:text="00/00/0000"
-                android:textSize="@dimen/text_size3" />
+                android:textSize="@dimen/text_size3"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 

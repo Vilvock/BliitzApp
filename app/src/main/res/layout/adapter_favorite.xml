@@ -51,7 +51,8 @@
                         android:layout_weight="1"
                         android:text="TextView"
                         android:textStyle="bold"
-                        android:textSize="@dimen/text_size5"/>
+                        android:textSize="@dimen/text_size5"
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -71,17 +72,45 @@
                     android:text="@string/lorem_ipsum"
                     android:lines="1"
                     android:ellipsize="end"
-                    android:textSize="@dimen/text_size3"/>
+                    android:textSize="@dimen/text_size3"
+                    android:textColor="@color/black"/>
 
 
-                <TextView
-                    android:id="@+id/valueTv"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="4dp"
-                    android:textColor="@color/colorPrimary"
-                    android:text="R$ 50,00"/>
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/valueTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="4dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="R$ 50,00"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:numStars="1"
+                        android:progress="100"
+                        android:progressTint="@color/yellowApplication" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="0"
+                        android:text="4.1"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+                </LinearLayout>
 
 
                 <View style="@style/Divider.Horizontal"
@@ -107,6 +136,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
                         android:text="Adicionar ao carrinho"
+                        android:textColor="@color/black"
                         android:textSize="@dimen/text_size3"/>
 
                     <View style="@style/Divider.Vertical"
@@ -125,7 +155,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
                         android:text="Remover"
-                        android:textSize="@dimen/text_size3"/>
+                        android:textSize="@dimen/text_size3"
+                        android:textColor="@color/black"/>
 
                 </LinearLayout>
 

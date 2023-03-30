@@ -29,7 +29,7 @@ class HomeFragment : BaseFragment() {
     override var toolbarVisibility: Boolean = true
     override var bottomNavigationVisibility: Boolean = true
 
-    override var title: String = "Home"
+    override var title: String = "Dashboard"
 
     private val handler = Handler()
     private var imageRunnable = Runnable { showAnimate() }

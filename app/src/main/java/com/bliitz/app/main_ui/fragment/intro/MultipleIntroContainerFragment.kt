@@ -68,16 +68,16 @@ class MultipleIntroContainerFragment : BaseFragment() {
         }
 
         fragmentList.add(
-            IntroType1Fragment("Lorem ipsum", "", 0)
+            IntroType1Fragment(getString(R.string.lorem_ipsum), "", 0)
         )
 
         fragmentList.add(
-            IntroType1Fragment("Lorem ipsum", "", 1)
+            IntroType1Fragment(getString(R.string.lorem_ipsum), "", 1)
         )
 
-        fragmentList.add(
-            IntroType1Fragment("Lorem ipsum", "", 2)
-        )
+//        fragmentList.add(
+//            IntroType1Fragment("Lorem ipsum", "", 2)
+//        )
 
 
 

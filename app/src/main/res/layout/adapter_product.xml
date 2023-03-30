@@ -50,7 +50,8 @@
                         android:layout_weight="1"
                         android:text="TextView"
                         android:textStyle="bold"
-                        android:textSize="@dimen/text_size5"/>
+                        android:textSize="@dimen/text_size5"
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -68,7 +69,8 @@
                     android:text="@string/lorem_ipsum"
                     android:lines="1"
                     android:ellipsize="end"
-                    android:textSize="@dimen/text_size3"/>
+                    android:textSize="@dimen/text_size3"
+                    android:textColor="@color/black"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -102,7 +104,8 @@
                         android:layout_marginEnd="4dp"
                         android:layout_weight="0"
                         android:text="4.1"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
                 </LinearLayout>
 
 

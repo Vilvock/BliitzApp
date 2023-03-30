@@ -52,7 +52,7 @@ class IntroType1Fragment(private val title: String, private val subTitle: String
 
         }
 
-        default_iv.setImageDrawable(drawable)
+//        default_iv.setImageDrawable(drawable)
 
     }
 

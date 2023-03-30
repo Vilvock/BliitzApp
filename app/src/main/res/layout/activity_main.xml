@@ -50,7 +50,6 @@
                     android:gravity="center"
                     android:textStyle="bold"
                     android:lines="1"
-                    android:textColor="@color/black"
                     android:textSize="@dimen/text_size6"
                     tools:text="Titulo" />
 

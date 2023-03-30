@@ -76,8 +76,7 @@
                             android:textStyle="bold"
                             android:ellipsize="end"
                             android:maxLines="2"
-                            android:minLines="2"
-                            android:textColor="@color/black" />
+                            android:minLines="2" />
 
                         <TextView
                             android:id="@+id/lastMessage_tv"
