@@ -27,6 +27,7 @@
                 android:layout_height="140dp"
                 android:layout_gravity="center"
                 android:scaleType="centerCrop"
+                android:src="@drawable/person"
                 android:background="@android:color/transparent"
                 app:shapeAppearanceOverlay="@style/roundedImageView"/>
 
@@ -49,103 +50,60 @@
             android:layout_marginTop="20dp"
             android:orientation="vertical">
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="Nome"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/mainEditText"
+                android:id="@+id/name_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication">
-
-                <EditText
-                    android:id="@+id/name_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="Nome"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
+                android:drawableStart="@drawable/ic_user"
+                android:inputType="text"
+                android:maxLines="1" />
 
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication">
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="E-mail"
+                android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/email_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:enabled="false"
-                    android:inputType="textEmailAddress"
-                    android:hint="Email"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            <EditText
+                style="@style/mainEditText"
+                android:id="@+id/email_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication">
+                android:drawableStart="@drawable/ic_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
 
-                <EditText
-                    android:id="@+id/birth_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="date"
-                    android:hint="Data de nascimento"
-                    app:met_mask="##/##/####"/>
 
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication">
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="Celular"
+                android:textStyle="bold" />
 
-                <com.santalu.maskedittext.MaskEditText
-                    android:id="@+id/cellphone_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Celular"
-                    android:inputType="number"
-                    app:met_mask="(##) #####-####" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            <com.santalu.maskedittext.MaskEditText
+                style="@style/mainEditText"
+                android:id="@+id/cellphone_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication">
-
-                <EditText
-                    android:id="@+id/document_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:hint="CPF"
-                    android:enabled="false"
-                    app:met_mask="###.###.###-##"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
+                android:drawableStart="@drawable/ic_cellphone"
+                android:inputType="number"
+                android:maxLines="1" />
 
             <com.bliitz.app.global_ui.components.ProgressButton
                 android:id="@+id/update_bt"
@@ -158,54 +116,51 @@
 
         </LinearLayout>
 
+        <View style="@style/Divider.Horizontal"
+            android:layout_marginTop="36dp"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="24dp"
             android:orientation="vertical">
 
+
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Alterar Senha"/>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                app:passwordToggleEnabled="true">
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="Senha"
+                android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/password_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPassword"
-                    android:hint="Nova senha"/>
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            <EditText
+                style="@style/mainEditText"
+                android:id="@+id/password_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_lock"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:layout_weight="0"
-                android:textColorHint="@color/grayApplication"
-                app:passwordToggleEnabled="true">
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="Confirmar Senha"
+                android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/coPassword_et"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPassword"
-                    android:hint="Confirmar senha"/>
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-
-        </LinearLayout>
+            <EditText
+                style="@style/mainEditText"
+                android:id="@+id/coPassword_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_lock"
+                android:inputType="textPassword"
+                android:maxLines="1" />
 
         <com.bliitz.app.global_ui.components.ProgressButton
             android:id="@+id/updatePass_bt"
@@ -215,6 +170,7 @@
             android:layout_marginTop="24dp"
             android:text="Alterar Senha" />
 
+    </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

@@ -49,6 +49,30 @@ class StaggeredCategoryAdapter(private val context: Context,
 
                 holder.nameTv.text = "lorem ipsum"
             }
+            2-> {
+
+                holder.nameTv.text = "categoria 4"
+            }
+            3 -> {
+
+                holder.nameTv.text = "lorem"
+            }
+            4-> {
+
+                holder.nameTv.text = "categoria ahhh"
+            }
+            5 -> {
+
+                holder.nameTv.text = "lorem ipsum 2"
+            }
+            6-> {
+
+                holder.nameTv.text = "categoria111"
+            }
+            7 -> {
+
+                holder.nameTv.text = "lorem ipsum ok"
+            }
             else ->{
 
                 holder.nameTv.text = "outra "

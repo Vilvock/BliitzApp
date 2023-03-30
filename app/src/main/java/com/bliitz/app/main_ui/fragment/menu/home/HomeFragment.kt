@@ -58,6 +58,10 @@ class HomeFragment : BaseFragment() {
         list.add(Any())
         list.add(Any())
 
+        seeMoreCategories_tv.setOnClickListener {
+
+            navigation.navigate(R.id.action_homeFragment_to_categoriesFragment)
+        }
 
         val adapter = ProductAdapter(requireActivity(), list, object : RecyclerItemListener {
             override fun onClickListenerItem(item: Any?) {

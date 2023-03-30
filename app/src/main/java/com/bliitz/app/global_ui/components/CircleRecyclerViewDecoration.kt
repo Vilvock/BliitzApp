@@ -13,8 +13,8 @@ import com.bliitz.app.R
 
 class CircleRecyclerViewDecoration(private val context: Context): RecyclerView.ItemDecoration() {
 
-    private val colorActive = context.resources.getColor(R.color.colorPrimaryDark)
-    private val colorInactive = context.resources.getColor(R.color.grayApplication)
+    private val colorActive = context.resources.getColor(R.color.colorPrimary)
+    private val colorInactive = context.resources.getColor(R.color.lightGrayApplication)
 
     /**
      * Height of the space the indicator takes up at the bottom of the view.

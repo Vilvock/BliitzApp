@@ -58,25 +58,44 @@
                         android:orientation="vertical">
 
 
-                        <TextView
+                        <androidx.cardview.widget.CardView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="0"
-                            android:text="nome da loja"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorPrimaryDark"/>
+                            app:cardElevation="1dp"
+                            app:cardCornerRadius="@dimen/min_application_radius">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0"
+                                    android:text="nome da loja"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryDark"/>
+
+
+                            </FrameLayout>
+
+                        </androidx.cardview.widget.CardView>
 
 
                         <TextView
                             android:id="@+id/name_tv"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
                             android:textSize="@dimen/text_size5"
-                            android:text="@string/lorem_ipsum"
+                            android:text="Nome item"
                             android:textStyle="bold"
                             android:ellipsize="end"
                             android:maxLines="2"
-                            android:minLines="2" />
+                            android:minLines="2"
+                            android:gravity="center_vertical"/>
 
                         <TextView
                             android:id="@+id/lastMessage_tv"
@@ -168,19 +187,14 @@
                                 android:textStyle="bold"/>
 
                             <TextView
+                                android:id="@+id/seeMoreCategories_tv"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="0"
                                 android:text="Ver mais"
-                                android:textColor="@color/colorPrimaryDark"/>
+                                android:textColor="@color/colorPrimary"/>
 
                         </LinearLayout>
-
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/categories_rv"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:overScrollMode="never"/>
 
 
                         <LinearLayout
@@ -238,6 +252,13 @@
 
                         </LinearLayout>
                     </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/categories_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"/>
+
                 </LinearLayout>
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>

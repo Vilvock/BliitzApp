@@ -24,6 +24,7 @@
 
     <dimen name="min_margin_application">8dp</dimen>
     <dimen name="padding_application">16dp</dimen>
+    <dimen name="min_padding_application">12dp</dimen>
 
     <dimen name="min_application_radius">4dp</dimen>
     <dimen name="application_radius">24dp</dimen>

@@ -64,6 +64,8 @@ class FilterFragment : BaseFragment() {
         list.add(Any())
         list.add(Any())
         list.add(Any())
+        list.add(Any())
+        list.add(Any())
 
 
         val categoryAdapter = StaggeredCategoryAdapter(requireActivity(), list, object : RecyclerItemListener {

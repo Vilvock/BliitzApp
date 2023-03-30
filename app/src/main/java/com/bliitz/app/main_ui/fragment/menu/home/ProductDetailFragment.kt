@@ -13,7 +13,6 @@ import com.bliitz.app.global_ui.config_fragment.BaseFragment
 import com.bliitz.app.main_ui.adapter.CarrouselProductItemAdapter
 import com.bliitz.app.main_ui.adapter.CategoryAdapter
 import com.bliitz.app.util.RecyclerItemListener
-import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_product_detail.*
 import kotlinx.android.synthetic.main.fragment_product_detail.categories_rv
 
@@ -41,6 +40,11 @@ class ProductDetailFragment : BaseFragment() {
 
         loadCarrousel()
 
+        seeMoreCategories_tv.setOnClickListener {
+
+            navigation.navigate(R.id.action_productDetailFragment_to_categoriesFragment)
+        }
+
         val list = ArrayList<Any>()
 
         list.add(Any())
@@ -53,6 +57,7 @@ class ProductDetailFragment : BaseFragment() {
             override fun onClickListenerItem(item: Any?) {
                 super.onClickListenerItem(item)
 
+                navigation.navigate(R.id.action_productDetailFragment_to_categoriesFragment)
             }
 
         })
