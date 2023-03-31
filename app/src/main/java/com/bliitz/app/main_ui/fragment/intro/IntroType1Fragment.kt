@@ -38,21 +38,17 @@ class IntroType1Fragment(private val title: String, private val subTitle: String
         var color: Int? = null
 
         when (position) {
-//            0 -> {
-//                drawable = resources.getDrawable(R.drawable.intro1_image)
-//            }
-//            1 -> {
-//
-//                drawable = resources.getDrawable(R.drawable.intro2_image)
-//            }
-//            2 -> {
-//
-//                drawable = resources.getDrawable(R.drawable.intro3_image)
-//            }
+            0 -> {
+                drawable = resources.getDrawable(R.drawable.intro_hanger_line256)
+            }
+            1 -> {
+
+                drawable = resources.getDrawable(R.drawable.intro_shopping_bag256)
+            }
 
         }
 
-//        default_iv.setImageDrawable(drawable)
+        default_iv.setImageDrawable(drawable)
 
     }
 

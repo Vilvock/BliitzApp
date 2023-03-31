@@ -31,7 +31,7 @@
                 android:background="@android:color/transparent"
                 android:scaleX="0.8"
                 android:scaleY="0.8"
-                android:src="@drawable/main_logo3" />
+                app:tint="@color/white"/>
 
             <TextView
                 android:id="@+id/titleIntro_tv"

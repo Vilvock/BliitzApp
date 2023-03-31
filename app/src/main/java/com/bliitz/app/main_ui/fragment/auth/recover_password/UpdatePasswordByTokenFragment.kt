@@ -13,6 +13,7 @@ import androidx.lifecycle.Observer
 import com.bliitz.app.R
 import com.bliitz.app.controller.webservice.config.ServiceResponse
 import com.bliitz.app.global_model.User
+import com.bliitz.app.global_ui.config_activity.ToolbarTint
 import com.bliitz.app.global_ui.config_fragment.BaseFragment
 import com.bliitz.app.global_ui.dialog.GenericDialogFragment
 import com.bliitz.app.main_ui.fragment.auth.recover_password.RecoverPasswordViewModel
@@ -25,6 +26,8 @@ class UpdatePasswordByTokenFragment : BaseFragment() {
     private val viewModel: RecoverPasswordViewModel by viewModels()
 
     override var hasBackButton: Boolean = true
+
+    override var toolbarColor: ToolbarTint = ToolbarTint.DARK
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

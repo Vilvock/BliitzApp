@@ -12,6 +12,7 @@ import com.bliitz.app.controller.webservice.config.ServiceResponse
 import com.bliitz.app.global_ui.components.SingleToast
 import com.bliitz.app.global_ui.config_activity.SystemBarColor
 import com.bliitz.app.global_ui.config_activity.BaseActivity
+import com.bliitz.app.global_ui.config_activity.ToolbarTint
 import com.bliitz.app.global_ui.dialog.GenericDialogFragment
 import com.bliitz.app.global_ui.dialog.CustomDialogMessages
 import com.bliitz.app.util.Animation
@@ -27,6 +28,8 @@ abstract class BaseFragment : Fragment() {
     open var title: String = ""
 
     open var systemBarColor: SystemBarColor = SystemBarColor.DARK
+
+    open var toolbarColor: ToolbarTint = ToolbarTint.WHITE
 
     open var hasBackButton = false
 
@@ -64,6 +67,7 @@ abstract class BaseFragment : Fragment() {
         updateTitle(title)
         updateHasBackButton(hasBackButton)
         updateSystemBarColor(systemBarColor)
+        updateToolbarColor(toolbarColor)
         updateVisibilityToolbar()
         updateVisibilityBottomNavigation()
 
@@ -90,6 +94,11 @@ abstract class BaseFragment : Fragment() {
     fun updateSystemBarColor(color: SystemBarColor) {
         this.systemBarColor = color
         (requireActivity() as? BaseActivity)?.updateSystemBarColor(color)
+    }
+
+    fun updateToolbarColor(color: ToolbarTint) {
+        this.toolbarColor = color
+        (requireActivity() as? BaseActivity)?.updateToolbarColor(color)
     }
 
     fun getMainParentFragment(): Fragment? {

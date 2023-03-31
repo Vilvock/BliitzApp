@@ -19,6 +19,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import com.bliitz.app.R
 import com.bliitz.app.global_ui.config_activity.BaseActivity
 import com.bliitz.app.global_ui.config_activity.SystemBarColor
+import com.bliitz.app.global_ui.config_activity.ToolbarTint
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.NullPointerException
 
@@ -89,6 +90,15 @@ class MainActivity : AppCompatActivity(), BaseActivity {
 
     override fun updateSystemBarColor(tint: SystemBarColor) {
 
+    }
+
+    override fun updateToolbarColor(tint: ToolbarTint) {
+
+        if (tint == ToolbarTint.DARK) {
+            app_bar.setBackgroundColor(resources.getColor(R.color.colorPrimaryDark))
+        } else {
+            app_bar.setBackgroundColor(resources.getColor(R.color.white))
+        }
     }
 
     override fun updatebottomNavigationVisibility(hasBottomNavigation: Boolean) {

@@ -243,15 +243,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:background="@color/colorPrimaryDark"
-        android:gravity="center_vertical"
+        android:gravity="center"
         android:layout_gravity="bottom"
         android:padding="@dimen/padding_application"
         app:elevation="6dp">
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginStart="12dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_weight="0"
             android:src="@drawable/whatsapp_logo" />
 
@@ -259,9 +258,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_weight="1"
+            android:layout_weight="0"
             android:text="Comprar via Whatsapp"
             android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size5"/>
     </LinearLayout>
 </FrameLayout>

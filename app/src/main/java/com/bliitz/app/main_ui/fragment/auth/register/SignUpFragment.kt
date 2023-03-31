@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
 import com.bliitz.app.R
+import com.bliitz.app.global_ui.config_activity.ToolbarTint
 import com.bliitz.app.global_ui.config_fragment.BaseFragment
 import com.bliitz.app.main_ui.activity.WebViewActivity
 import kotlinx.android.synthetic.main.fragment_sign_in.*
@@ -28,6 +29,8 @@ class SignUpFragment : BaseFragment() {
     private val viewModel: SignUpViewModel by viewModels()
 
     override var hasBackButton: Boolean = true
+
+    override var toolbarColor: ToolbarTint = ToolbarTint.DARK
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
