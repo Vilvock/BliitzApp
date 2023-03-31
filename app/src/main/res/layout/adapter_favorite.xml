@@ -10,7 +10,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/min_margin_application"
         app:cardCornerRadius="@dimen/application_radius"
-        app:cardElevation="1dp"
         android:foreground="?android:attr/selectableItemBackground">
 
         <RelativeLayout
@@ -100,7 +99,8 @@
                         android:layout_weight="0"
                         android:numStars="1"
                         android:progress="100"
-                        android:progressTint="@color/yellowApplication" />
+                        android:progressTint="@color/yellowApplication"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -109,7 +109,8 @@
                         android:layout_weight="0"
                         android:text="4.1"
                         android:textStyle="bold"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/black"
+                        android:visibility="gone"/>
                 </LinearLayout>
 
 
@@ -129,7 +130,8 @@
                         android:layout_height="16dp"
                         android:layout_marginEnd="4dp"
                         android:src="@drawable/ic_add_cart"
-                        android:background="@android:color/transparent"/>
+                        android:background="@android:color/transparent"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -137,11 +139,13 @@
                         android:layout_weight="0"
                         android:text="Adicionar ao carrinho"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/text_size3"/>
+                        android:textSize="@dimen/text_size3"
+                        android:visibility="gone"/>
 
                     <View style="@style/Divider.Vertical"
                         android:layout_marginStart="6dp"
-                        android:layout_marginEnd="6dp"/>
+                        android:layout_marginEnd="6dp"
+                        android:visibility="gone"/>
 
                     <ImageView
                         android:layout_width="16dp"

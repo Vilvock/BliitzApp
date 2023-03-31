@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:background="@drawable/main_dark_solid_background"
     tools:context=".main_ui.fragment.auth.login.SignInFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -28,7 +29,8 @@
                 android:gravity="start"
                 android:text="Realize seu login"
                 android:textSize="@dimen/text_size7"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white" />
         </LinearLayout>
 
         <LinearLayout
@@ -44,7 +46,8 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginBottom="4dp"
                 android:text="E-mail"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white" />
 
             <EditText
                 style="@style/mainEditText"
@@ -62,7 +65,8 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginBottom="4dp"
                 android:text="Senha"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white" />
 
             <EditText
                 style="@style/mainEditText"
@@ -80,7 +84,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="end"
-                android:text="Esqueceu sua senha?" />
+                android:text="Esqueceu sua senha?"
+                android:textColor="@color/white" />
 
 
             <com.bliitz.app.global_ui.components.ProgressButton
@@ -191,7 +196,8 @@
             android:layout_weight="0"
             android:layout_margin="36dp"
             android:gravity="center_horizontal"
-            android:text="Ainda não possui uma conta? Entre aqui" />
+            android:text="Ainda não possui uma conta? Entre aqui"
+            android:textColor="@color/white"/>
 
 
     </LinearLayout>

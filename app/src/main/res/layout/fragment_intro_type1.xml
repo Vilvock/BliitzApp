@@ -43,7 +43,8 @@
                 android:text="@string/lorem_ipsum"
                 android:textAlignment="center"
                 android:textSize="@dimen/text_size5"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/subTitleIntro_tv"

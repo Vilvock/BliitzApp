@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:background="@drawable/main_dark_solid_background"
     tools:context=".main_ui.fragment.auth.recover_password.VerifyTokenFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -27,7 +28,8 @@
                 android:layout_height="match_parent"
                 android:text="Verificar Token"
                 android:textSize="@dimen/text_size7"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
         </LinearLayout>
 
         <LinearLayout
@@ -41,7 +43,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="É necessário inserir o Token enviado por e-mail para prosseguir."
-                android:layout_marginTop="24dp" />
+                android:layout_marginTop="24dp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -50,7 +53,8 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginBottom="4dp"
                 android:text="Token"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
             <EditText
                 style="@style/mainEditText"
@@ -81,7 +85,8 @@
             android:layout_weight="0"
             android:layout_margin="36dp"
             android:gravity="center_horizontal"
-            android:text="Já tem uma conta? Entre aqui" />
+            android:text="Já tem uma conta? Entre aqui"
+            android:textColor="@color/white" />
 
 
     </LinearLayout>

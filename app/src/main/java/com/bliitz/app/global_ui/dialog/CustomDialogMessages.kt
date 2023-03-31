@@ -46,27 +46,27 @@ class CustomDialogMessages (private val context: Context) {
 //        }
 //    }
 //
-//    fun openFormAddress(answer: Answer) {
-//
-//        val builder = AlertDialog.Builder(context)
-//        val alertDialog = builder.create()
-//        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-//        val view: View = inflater.inflate(R.layout.dialog_address, null)
-//        alertDialog.setView(view)
-//        alertDialog.window!!.setBackgroundDrawableResource(android.R.color.transparent)
-//        alertDialog.setCanceledOnTouchOutside(true)
-//        alertDialog.setCancelable(true)
-//        alertDialog.show()
-//
-//        val finishBt = view.findViewById<Button>(R.id.finish_bt)
-//
-//
-//        finishBt.setOnClickListener {
-//            answer.setOnClickListener()
-//            alertDialog.dismiss()
-//        }
-//
-//    }
+    fun openFormAddress(answer: Answer) {
+
+        val builder = AlertDialog.Builder(context)
+        val alertDialog = builder.create()
+        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val view: View = inflater.inflate(R.layout.dialog_address, null)
+        alertDialog.setView(view)
+        alertDialog.window!!.setBackgroundDrawableResource(android.R.color.transparent)
+        alertDialog.setCanceledOnTouchOutside(true)
+        alertDialog.setCancelable(true)
+        alertDialog.show()
+
+        val finishBt = view.findViewById<Button>(R.id.finish_bt)
+
+
+        finishBt.setOnClickListener {
+            answer.setOnClickListener()
+            alertDialog.dismiss()
+        }
+
+    }
 //
 //    fun openDescription(answerString: AnswerString) {
 //

@@ -13,7 +13,7 @@
         android:layout_margin="@dimen/min_margin_application"
         android:foreground="?android:attr/selectableItemBackground"
         app:cardCornerRadius="@dimen/application_radius"
-        app:cardElevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -60,8 +60,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
                     android:text="nome da loja"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorPrimaryDark"/>
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/name_tv"
@@ -100,7 +100,8 @@
                         android:layout_weight="0"
                         android:numStars="1"
                         android:progress="100"
-                        android:progressTint="@color/yellowApplication" />
+                        android:progressTint="@color/yellowApplication"
+                        android:visibility="gone" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -108,8 +109,9 @@
                         android:layout_marginEnd="4dp"
                         android:layout_weight="0"
                         android:text="4.1"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
-                        android:textColor="@color/black" />
+                        android:visibility="gone" />
                 </LinearLayout>
 
 
