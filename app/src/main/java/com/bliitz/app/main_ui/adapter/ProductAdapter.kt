@@ -20,7 +20,7 @@ class ProductAdapter(private val context: Context,
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 //
-//        val nameTv: TextView = itemView.findViewById(R.id.name_tv)
+        val nameTv: TextView = itemView.findViewById(R.id.name_tv)
 //        val commentTv: TextView = itemView.findViewById(R.id.comment_tv)
 //        val ratingBar: RatingBar = itemView.findViewById(R.id.ratingBar)
 //        val dateTv: TextView = itemView.findViewById(R.id.date_tv)
@@ -38,7 +38,26 @@ class ProductAdapter(private val context: Context,
 
         val item = list[position]
 
+        holder.nameTv.text = "Nome item " + position
 
+        when(position) {
+            0 -> {
+
+                holder.avatarIv.setImageResource(R.drawable.random4)
+            }
+            1 -> {
+
+                holder.avatarIv.setImageResource(R.drawable.random1)
+            }
+            2 -> {
+
+                holder.avatarIv.setImageResource(R.drawable.ranbdom3)
+            }
+            else -> {
+
+                holder.avatarIv.setImageResource(R.drawable.abd3f2b8342d750402060346f8db4f1b)
+            }
+        }
 
         holder.itemView.setOnClickListener { onListener.onClickListenerItem(item) }
 

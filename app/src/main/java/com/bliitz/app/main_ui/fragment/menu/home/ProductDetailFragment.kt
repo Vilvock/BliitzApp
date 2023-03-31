@@ -82,10 +82,10 @@ class ProductDetailFragment : BaseFragment() {
 
         val photoList = ArrayList<Int>()
 
-        photoList.add(R.drawable.main_logo1)
-        photoList.add(R.drawable.main_logo1)
-        photoList.add(R.drawable.main_logo1)
-        photoList.add(R.drawable.main_logo1)
+        photoList.add(R.drawable.abd3f2b8342d750402060346f8db4f1b)
+        photoList.add(R.drawable.random1)
+        photoList.add(R.drawable.random4)
+        photoList.add(R.drawable.ranbdom3)
 
         val adapter = CarrouselProductItemAdapter(photoList)
 

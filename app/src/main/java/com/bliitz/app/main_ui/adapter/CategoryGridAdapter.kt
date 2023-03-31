@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bliitz.app.R
 import com.bliitz.app.util.RecyclerItemListener
@@ -18,7 +19,7 @@ class CategoryGridAdapter(private val context: Context,
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         //
-//        val nameTv: TextView = itemView.findViewById(R.id.name_tv)
+        val nameTv: TextView = itemView.findViewById(R.id.name_tv)
 //        val commentTv: TextView = itemView.findViewById(R.id.comment_tv)
 //        val ratingBar: RatingBar = itemView.findViewById(R.id.ratingBar)
 //        val dateTv: TextView = itemView.findViewById(R.id.date_tv)
@@ -40,6 +41,22 @@ class CategoryGridAdapter(private val context: Context,
         val item = list[position]
 
 
+        holder.nameTv.text = "Categoria " + position
+
+        when(position) {
+            0 -> {
+
+                holder.avatarIv.setImageResource(R.drawable.random2)
+            }
+            1 -> {
+
+                holder.avatarIv.setImageResource(R.drawable.random2)
+            }
+            2 -> {
+
+                holder.avatarIv.setImageResource(R.drawable.random2)
+            }
+        }
 
         holder.itemView.setOnClickListener { onListener.onClickListenerItem(item) }
 
