@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.bliitz.app.R
 import com.bliitz.app.global_ui.config_fragment.BaseFragment
@@ -68,16 +69,22 @@ class FilterFragment : BaseFragment() {
         list.add(Any())
 
 
-        val categoryAdapter = StaggeredCategoryAdapter(requireActivity(), list, object : RecyclerItemListener {
+        val categoryAdapter = CategoryAdapter(requireActivity(), list, object : RecyclerItemListener {
             override fun onClickListenerItem(item: Any?) {
                 super.onClickListenerItem(item)
 
             }
 
         })
-        val staggeredGridLayoutManager = StaggeredGridLayoutManager(3, LinearLayoutManager.VERTICAL)
+        val layoutManagerRvHorizontal: RecyclerView.LayoutManager = (object : LinearLayoutManager(requireContext(), HORIZONTAL, false) {
+            override fun checkLayoutParams(lp: RecyclerView.LayoutParams): Boolean {
+                // force height of viewHolder here, this will override layout_height from xml
+//                lp.width = (width / 2.6).toInt()
+                return true
+            }
+        })
 
-        categories_rv.layoutManager = staggeredGridLayoutManager
+        categories_rv.layoutManager = layoutManagerRvHorizontal
         categories_rv.adapter = categoryAdapter
 
     }

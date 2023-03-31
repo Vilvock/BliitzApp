@@ -14,7 +14,9 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import com.bliitz.app.R
 import com.bliitz.app.global_ui.components.CircleRecyclerViewDecoration
+import com.bliitz.app.global_ui.config_activity.ToolbarIcon
 import com.bliitz.app.global_ui.config_fragment.BaseFragment
+import com.bliitz.app.global_ui.dialog.CustomDialogMessages
 import com.bliitz.app.main_ui.activity.MainActivity
 import com.bliitz.app.main_ui.adapter.*
 import com.bliitz.app.util.RecyclerItemListener
@@ -28,6 +30,8 @@ class HomeFragment : BaseFragment() {
 
     override var toolbarVisibility: Boolean = true
     override var bottomNavigationVisibility: Boolean = true
+
+    override var toolbarIcon: ToolbarIcon = ToolbarIcon.BELL
 
     override var title: String = "Dashboard"
 
@@ -61,6 +65,14 @@ class HomeFragment : BaseFragment() {
         seeMoreCategories_tv.setOnClickListener {
 
             navigation.navigate(R.id.action_homeFragment_to_categoriesFragment)
+        }
+
+        address_tv.setOnClickListener {
+            customDialogMessages.openFormAddress(object : CustomDialogMessages.Answer {
+                override fun setOnClickListener() {
+
+                }
+            })
         }
 
         val adapter = ProductAdapter(requireActivity(), list, object : RecyclerItemListener {

@@ -24,20 +24,24 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:layout_marginStart="16dp"
-                    android:text="Endereço atual:"
-                    android:ellipsize="end"
+                    android:text="Localização atual"
+                    android:layout_gravity="center_horizontal"
                     android:textSize="@dimen/text_size3"/>
 
-                <Spinner
-                    android:id="@+id/address_sp"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/address_tv"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:entries="@array/default_array"/>
+                    android:layout_margin="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableStart="@drawable/ic_place"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:text="Av. Ipiranga 1000"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
 
                 <FrameLayout
                     android:layout_width="match_parent"

@@ -19,6 +19,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import com.bliitz.app.R
 import com.bliitz.app.global_ui.config_activity.BaseActivity
 import com.bliitz.app.global_ui.config_activity.SystemBarColor
+import com.bliitz.app.global_ui.config_activity.ToolbarIcon
 import com.bliitz.app.global_ui.config_activity.ToolbarTint
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.NullPointerException
@@ -86,6 +87,14 @@ class MainActivity : AppCompatActivity(), BaseActivity {
         }
 
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun updateToolbarIcon(icon: ToolbarIcon) {
+        if (icon == ToolbarIcon.BELL) {
+           bell_fab.visibility = View.VISIBLE
+        } else {
+           bell_fab.visibility = View.GONE
+        }
     }
 
     override fun updateSystemBarColor(tint: SystemBarColor) {

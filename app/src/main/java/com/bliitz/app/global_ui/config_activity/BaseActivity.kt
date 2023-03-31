@@ -2,6 +2,10 @@ package com.bliitz.app.global_ui.config_activity
 
 import android.graphics.Color
 
+enum class ToolbarIcon {
+    BELL, NONE
+}
+
 enum class ToolbarTint {
     WHITE, DARK, NONE
 }
@@ -11,6 +15,7 @@ enum class SystemBarColor {
 }
 
 interface BaseActivity {
+    fun updateToolbarIcon(icon: ToolbarIcon)
     fun updateSystemBarColor(tint: SystemBarColor)
     fun updateToolbarColor(tint: ToolbarTint)
     fun updatebottomNavigationVisibility(hasBottomNavigation: Boolean)

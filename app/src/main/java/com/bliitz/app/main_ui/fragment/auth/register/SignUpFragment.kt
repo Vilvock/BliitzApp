@@ -60,7 +60,7 @@ class SignUpFragment : BaseFragment() {
             "Já possui uma conta? Entre aqui",
             "Entre aqui", object : ClickableSpan() {
                 override fun onClick(widget: View) {
-                    navigation.navigate(R.id.action_signInFragment_to_signUpFragment)
+                    navigation.popBackStack()
                 }
 
                 override fun updateDrawState(ds: TextPaint) {
