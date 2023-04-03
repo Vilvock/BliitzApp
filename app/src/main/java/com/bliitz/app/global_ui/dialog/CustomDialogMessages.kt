@@ -59,7 +59,7 @@ class CustomDialogMessages (private val context: Context) {
         alertDialog.show()
 
         val finishBt = view.findViewById<Button>(R.id.finish_bt)
-        val closeBt = view.findViewById<Button>(R.id.close_imageButton)
+        val closeBt = view.findViewById<ImageButton>(R.id.close_imageButton)
 
         closeBt.setOnClickListener {
             alertDialog.dismiss()

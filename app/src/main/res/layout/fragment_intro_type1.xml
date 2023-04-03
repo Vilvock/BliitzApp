@@ -29,8 +29,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
-                android:scaleX="0.8"
-                android:scaleY="0.8"
+                android:scaleX="0.6"
+                android:scaleY="0.6"
                 app:tint="@color/white"/>
 
             <TextView
